@@ -1,5 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe Work, type: :model do
-  it { should respond_to :title }
+  subject(:work) { FactoryGirl.build(:work) }
+
+  specify { expect(work.title).to be_present }
 end
