@@ -42,7 +42,7 @@ describe FlexibleDate do
 
     specify { expect(flex_date.date_range).to eq (Date.new(2005, 12, 26)..Date.new(2005, 12, 26)) }
 
-    specify { expect(flex_date.to_s).to eq "December 26, 2005" }
+    specify { expect(flex_date.to_s).to eq "26 December 2005" }
   end
 
   context "with a year and a quarter" do

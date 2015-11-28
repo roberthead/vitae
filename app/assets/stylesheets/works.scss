@@ -1,0 +1,22 @@
+.work {
+  margin: 1rem;
+
+  header {
+    :first-child {
+      margin-top: 1em;
+    }
+
+    :last-child {
+      margin-bottom: 1em;
+    }
+  }
+
+  .title {
+    font-size: 1.618rem;
+    letter-spacing: 0.236em;
+  }
+
+  .subtitle {
+    font-weight: 500;
+  }
+}

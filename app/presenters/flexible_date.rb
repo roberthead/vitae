@@ -1,13 +1,13 @@
-class FlexibleDate < Struct.new(:year, :month_or_season, :day)
+class FlexibleDate < Struct.new(:year_or_db_string, :month_or_season, :day)
   MONTHS = %w{January February March April May June July August September October November December}
   ABBREVIATED_MONTHS = MONTHS.map { |month| month[0..2] }
   SEASONS = %w{Winter Spring Summer Fall}
 
-  attr_accessor :month, :season
+  attr_accessor :year, :month, :season
 
   def initialize(*)
     super
-    populate_month_or_season
+    populate_attributes
   end
 
   def to_db
@@ -23,10 +23,8 @@ class FlexibleDate < Struct.new(:year, :month_or_season, :day)
   end
 
   def to_s(options = {})
-    if day
-      "#{month_string(options[:month])} #{day}, #{year}"
-    elsif month
-      "#{month_string(options[:month])} #{year}"
+    if month
+      "#{day} #{month_string(options[:month])} #{year}".strip
     elsif season
       "#{season} #{year}"
     else
@@ -78,19 +76,36 @@ class FlexibleDate < Struct.new(:year, :month_or_season, :day)
     MONTHS[month - 1][0..2]
   end
 
-  def populate_month_or_season
-    case month_or_season
-    when String, Symbol
-      self.month_or_season = self.month_or_season.to_s.titlecase
-      if MONTHS.include? month_or_season
-        self.month = MONTHS.index(month_or_season) + 1
-      elsif ABBREVIATED_MONTHS.include? month_or_season
-        self.month = ABBREVIATED_MONTHS.index(month_or_season) + 1
-      elsif SEASONS.include?(month_or_season)
-        self.season = month_or_season
+  def populate_attributes
+    if year_or_db_string.is_a? String
+      elements = year_or_db_string.split('-')
+      if elements.length > 1
+        self.year = elements[0].to_i
+        populate_month_or_season(elements[1])
+        self.day = elements[2].try(:to_i)
       end
-    when Integer
-      self.month = month_or_season
+    end
+    self.year ||= year_or_db_string.try(:to_i)
+    populate_month_or_season
+  end
+
+  def populate_month_or_season(local_month_or_season = month_or_season)
+    if local_month_or_season.present? && month.nil? && season.nil?
+      case local_month_or_season
+      when String, Symbol
+        local_month_or_season = local_month_or_season.to_s.titlecase
+        if MONTHS.include? local_month_or_season
+          self.month = MONTHS.index(local_month_or_season) + 1
+        elsif ABBREVIATED_MONTHS.include? local_month_or_season
+          self.month = ABBREVIATED_MONTHS.index(local_month_or_season) + 1
+        elsif SEASONS.include?(local_month_or_season)
+          self.season = local_month_or_season
+        elsif local_month_or_season.to_i.in?(1..12)
+          self.month = local_month_or_season.to_i
+        end
+      when Integer
+        self.month = local_month_or_season
+      end
     end
   end
 end
