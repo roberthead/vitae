@@ -9,14 +9,46 @@
     :last-child {
       margin-bottom: 1em;
     }
+
+    a {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   .title {
     font-size: 1.618rem;
     letter-spacing: 0.236em;
+    font-color: black;
+    font-decoration: none;
   }
 
   .subtitle {
     font-weight: 500;
+  }
+
+  .attribution {
+    text-transform: lowercase;
+
+    * {
+      display: inline;
+    }
+
+    > * {
+      &::after {
+        content: " | ";
+        color: #BBBBBB;
+      }
+
+      &:last-child {
+        &::after {
+          content: "";
+        }
+      }
+    }
   }
 }

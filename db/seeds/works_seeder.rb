@@ -1,4 +1,4 @@
-class WorksSeeder
+class WorkSeeds
   DEFAULT_ATTRIBUTES = {
     attribution: "Robert Emerson Head"
   }
@@ -41,28 +41,28 @@ class WorksSeeder
       collection_position: 1,
     },
     {
-      title: "Into the storm - Entry",
+      title: "Into the Storm - Entry",
       creation_flexdate: "2008",
       medium: "Music Composition",
       collection_name: "Hurricane Hunters",
       collection_position: 2,
     },
     {
-      title: "Into the storm - Wonder",
+      title: "Into the Storm - Wonder",
       creation_flexdate: "2008",
       medium: "Music Composition",
       collection_name: "Hurricane Hunters",
       collection_position: 3,
     },
     {
-      title: "Into the storm - Fury",
+      title: "Into the Storm - Fury",
       creation_flexdate: "2008",
       medium: "Music Composition",
       collection_name: "Hurricane Hunters",
       collection_position: 4,
     },
     {
-      title: "Prep",
+      title: "On the Ground",
       creation_flexdate: "2008",
       medium: "Music Composition",
       collection_name: "Hurricane Hunters",
