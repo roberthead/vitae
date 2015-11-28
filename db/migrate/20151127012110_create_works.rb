@@ -10,6 +10,8 @@ class CreateWorks < ActiveRecord::Migration
       t.string :creation_flexdate
       t.text :artist_statement
       t.text :description
+      t.string :collection_name
+      t.string :collection_position
 
       t.timestamps null: false
     end

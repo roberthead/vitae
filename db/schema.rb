@@ -26,8 +26,10 @@ ActiveRecord::Schema.define(version: 20151127012110) do
     t.string   "creation_flexdate"
     t.text     "artist_statement"
     t.text     "description"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.string   "collection_name"
+    t.string   "collection_position"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
 end
