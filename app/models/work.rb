@@ -4,7 +4,11 @@ class Work < ActiveRecord::Base
   before_save :ensure_fast_attribution
 
   def attribution
-    fast_attribution_string
+    fast_attribution
+  end
+
+  def creation_date_string
+    FlexibleDate.new(creation_flexdate).to_s
   end
 
   private
