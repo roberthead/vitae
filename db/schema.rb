@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151129012305) do
+ActiveRecord::Schema.define(version: 20151129053351) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,6 +56,24 @@ ActiveRecord::Schema.define(version: 20151129012305) do
     t.datetime "updated_at",          null: false
   end
 
+  create_table "courses", force: :cascade do |t|
+    t.string   "name"
+    t.string   "instructor"
+    t.string   "college"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "designations", force: :cascade do |t|
+    t.integer  "course_id"
+    t.string   "subject_code"
+    t.string   "course_number"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "designations", ["course_id"], name: "index_designations_on_course_id", using: :btree
+
   create_table "works", force: :cascade do |t|
     t.string   "title"
     t.string   "subtitle"
@@ -70,9 +88,14 @@ ActiveRecord::Schema.define(version: 20151129012305) do
     t.string   "collection_position"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+    t.integer  "course_id"
   end
+
+  add_index "works", ["course_id"], name: "index_works_on_course_id", using: :btree
 
   add_foreign_key "annotations", "citations"
   add_foreign_key "attributions", "citations"
   add_foreign_key "attributions", "works"
+  add_foreign_key "designations", "courses"
+  add_foreign_key "works", "courses"
 end
