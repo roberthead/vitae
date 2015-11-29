@@ -61,8 +61,12 @@ ActiveRecord::Schema.define(version: 20151129053351) do
     t.string   "instructor"
     t.string   "college"
     t.string   "quarter"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "credits_min"
+    t.integer  "credits_max"
+    t.string   "grade"
+    t.integer  "interest"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "designations", force: :cascade do |t|

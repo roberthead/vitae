@@ -16,4 +16,16 @@ class Course < ActiveRecord::Base
   def designation_codes
     designations.map(&:course_code).join(', ')
   end
+
+  def graduate_value
+    (interest || 50) * (course_level - 2) * credits_avg
+  end
+
+  def course_level
+    course_number.to_s.first.to_i
+  end
+
+  def credits_avg
+    (credits_min + credits_max) / 2
+  end
 end

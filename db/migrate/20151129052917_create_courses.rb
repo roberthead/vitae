@@ -5,6 +5,10 @@ class CreateCourses < ActiveRecord::Migration
       t.string :instructor
       t.string :college
       t.string :quarter
+      t.integer :credits_min
+      t.integer :credits_max
+      t.string :grade
+      t.integer :interest
 
       t.timestamps null: false
     end
