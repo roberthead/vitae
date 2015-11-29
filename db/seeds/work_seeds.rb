@@ -109,9 +109,9 @@ class WorkSeeds
     WORKS.each do |work_params|
       work_params.reverse_merge!(DEFAULT_ATTRIBUTES)
       work = Work.where(title: work_params[:title], creation_flexdate: work_params[:creation_flexdate]).first_or_create(work_params)
-      # work.attributions.where(name_last: "Head", name_first_and_middle: "Robert Emerson").first_or_create.tap do |attribution|
-      #   attribution.update_attributes({ position: 1 })
-      # end
+      work.attributions.where(name_last: "Head", name_first: "Robert Emerson").first_or_create.tap do |attribution|
+        attribution.update_attributes({ name_middle: "Emerson", position: 1, editor: false })
+      end
     end
   end
 end

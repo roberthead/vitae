@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 20151129012305) do
   create_table "works", force: :cascade do |t|
     t.string   "title"
     t.string   "subtitle"
-    t.string   "fast_attribution_string"
+    t.string   "fast_attribution"
     t.string   "medium"
     t.string   "materials"
     t.string   "process"
@@ -68,8 +68,8 @@ ActiveRecord::Schema.define(version: 20151129012305) do
     t.text     "description"
     t.string   "collection_name"
     t.string   "collection_position"
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   add_foreign_key "annotations", "citations"
