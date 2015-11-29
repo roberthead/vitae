@@ -1,6 +1,6 @@
 class WorkSeeds
   DEFAULT_ATTRIBUTES = {
-    # attribution: "Robert Emerson Head"
+    attributions: [{ name_first: "Robert", name_middle: "Emerson", name_last: "Head" }]
   }
 
   WORKS = [
@@ -106,12 +106,14 @@ class WorkSeeds
   ]
 
   def self.seed!
-    WORKS.each do |work_params|
-      work_params.reverse_merge!(DEFAULT_ATTRIBUTES)
-      work = Work.where(title: work_params[:title], creation_flexdate: work_params[:creation_flexdate]).first_or_create(work_params)
-      work.attributions.where(name_last: "Head", name_first: "Robert").first_or_create.tap do |attribution|
-        attribution.update_attributes({ name_middle: "Emerson", position: 1, editor: false })
+    WORKS.each do |work_attributes|
+      work_attributes.reverse_merge!(DEFAULT_ATTRIBUTES)
+      attributions = work_attributes.delete(:attributions)
+      work = Work.where(title: work_attributes[:title], creation_flexdate: work_attributes[:creation_flexdate]).first_or_create(work_attributes)
+      attributions.each do |attribution_attributes|
+        work.attributions << Attribution.new(attribution_attributes)
       end
+      work.save
     end
   end
 end

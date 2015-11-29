@@ -29,7 +29,7 @@ class Attribution < ActiveRecord::Base
   def ensure_position
     if position.nil?
       candidate = 0
-      while Attribution.where(position: candidate).where.not(id: id).present? do
+      while Attribution.where(position: candidate, work_id: work_id, citation_id: citation_id).where.not(id: id).present? do
         candidate += 1
       end
       self.position = candidate
