@@ -1,5 +1,5 @@
 class Work < ActiveRecord::Base
-  has_many :attributions
+  has_many :attributions, -> { order(:position) }
 
   before_save :ensure_fast_attribution
 
