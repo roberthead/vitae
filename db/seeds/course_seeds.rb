@@ -7,7 +7,7 @@ class CourseSeeds
     {
       title: "Introduction to Interdisciplinary Studies",
       course_codes: "MIIS 520",
-      instructor: "Kristin Nagy Catz"
+      instructor: "Kristin Nagy Catz",
       quarter: "2015-Fall",
     },
   ]
