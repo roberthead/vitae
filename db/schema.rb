@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20151127012110) do
   create_table "works", force: :cascade do |t|
     t.string   "title"
     t.string   "subtitle"
-    t.string   "attribution"
+    t.string   "fast_attribution_string"
     t.string   "medium"
     t.string   "materials"
     t.string   "process"
@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20151127012110) do
     t.text     "description"
     t.string   "collection_name"
     t.string   "collection_position"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
 end

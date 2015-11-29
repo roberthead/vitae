@@ -1,6 +1,6 @@
 class WorkSeeds
   DEFAULT_ATTRIBUTES = {
-    attribution: "Robert Emerson Head"
+    # attribution: "Robert Emerson Head"
   }
 
   WORKS = [
@@ -108,7 +108,10 @@ class WorkSeeds
   def self.seed!
     WORKS.each do |work_params|
       work_params.reverse_merge!(DEFAULT_ATTRIBUTES)
-      Work.find_by(title: work_params[:title]) || Work.create(work_params)
+      work = Work.where(title: work_params[:title], creation_flexdate: work_params[:creation_flexdate]).first_or_create(work_params)
+      # work.attributions.where(name_last: "Head", name_first_and_middle: "Robert Emerson").first_or_create.tap do |attribution|
+      #   attribution.update_attributes({ position: 1 })
+      # end
     end
   end
 end

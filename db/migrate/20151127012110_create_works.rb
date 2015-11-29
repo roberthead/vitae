@@ -3,7 +3,7 @@ class CreateWorks < ActiveRecord::Migration
     create_table :works do |t|
       t.string :title
       t.string :subtitle
-      t.string :attribution
+      t.string :fast_attribution_string
       t.string :medium
       t.string :materials
       t.string :process
