@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :course do
-    title { Faker::Lorem.word(5) }
+    title { Faker::Lorem.words(5) }
     college "Southern Oregon University"
   end
 end
