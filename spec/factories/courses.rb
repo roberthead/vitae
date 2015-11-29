@@ -2,8 +2,7 @@
 
 FactoryGirl.define do
   factory :course do
-    name "MyString"
-    instructor "MyString"
-    college "MyString"
+    title { Faker::Lorem.word(5) }
+    college "Southern Oregon University"
   end
 end
