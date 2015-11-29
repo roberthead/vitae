@@ -1,13 +1,40 @@
 !!!
 %html
   %head
-    %title Vitae
+    %title Robert Emerson Head – Vitae
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body{ class: controller.controller_name }
     .spread
       %header.global
-        Nav here.
-      %article
-        = yield
+        %h1.name
+          Robert Emerson Head
+      .main.row
+        .columns.medium-3.small-12
+          %nav.global
+            %ul
+              %li
+                = link_to_unless_current("Home", "/")
+              %li
+                = link_to_unless_current("Portfolio", "/works")
+              %li
+                = link_to_unless_current("Program of Study", "/courses")
+              %li
+                = link_to_unless_current("Annotated Bibliography", "/annotations")
+              %li
+                = link_to_unless_current("Professional Resume", "/resume")
+
+        .columns.medium-9.small-12
+          %article
+            = yield
+      %footer
+        %ul.contact-methods.row
+          %li.contact-method.small-12.medium-6.large-3.columns
+            = link_to("robert.head@gmail.com", "mailto:robert.head@gmail.com", target: "gmail")
+          %li.contact-method.small-12.medium-6.large-3.columns
+            = link_to("@roberthead", "https://twitter.com/roberthead", target: "twitter")
+          %li.contact-method.small-12.medium-6.large-3.columns
+            = link_to("facebook.com/robert.head", "https://facebook.com/robert.head", target: "facebook")
+          %li.contact-method.small-12.medium-6.large-3.columns
+            = link_to("github.com/roberthead", "https://github.com/roberthead", target: "github")

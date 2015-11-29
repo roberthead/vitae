@@ -21,8 +21,8 @@ class Course < ActiveRecord::Base
   end
 
   def graduate_value
-    # maximum score is 100
-    (interest || 50) * (course_level / 5.0)
+    # maximum score should be 100
+    (interest || 50) * ((course_level + 3) / 8.0)
   end
 
   def graduate_value_level

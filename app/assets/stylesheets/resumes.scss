@@ -1,4 +1,4 @@
-.legacy {
+div {
   p, td {
     font-size: 12px;
     font-style: normal;
@@ -82,8 +82,8 @@
   }
 
   div.resume {
-    width: 90%;
-    margin: 5em auto;
+    width: 100%;
+    margin: 0;
     padding: 2em;
     border: 1.6pt solid #350505;
     background: white;

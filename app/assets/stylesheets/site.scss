@@ -1,3 +1,5 @@
+@import 'colors';
+
 body {
   font-family: Avenir, Helvetica, sans-serif;
   font-weight: 300;
@@ -22,14 +24,16 @@ h3, h4 {
   margin: 0;
   padding: 0;
   background-color: #72a8ff;
-  background: url(asset_path('vitruvian')) -25px -25px repeat-y;
+  background: url(asset_path('vitruvian')) center -25px repeat-y;
   overflow: auto;
   overflow: -moz-scrollbars-none;
+  min-height: 100%;
 
-  > header, > article {
-    margin: 0.25rem 2rem;
+  > header, > footer, .main.row {
+    margin: 0.5rem auto;
+    max-width: 90%;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.85);
+    background: $content-background-color;
 
     &:first-child {
       margin-top: 2rem;
@@ -37,6 +41,56 @@ h3, h4 {
 
     &:last-child {
       margin-bottom: 2rem;
+    }
+  }
+}
+
+header.global {
+  h1.name {
+    font-size: 1.382rem;
+    letter-spacing: 1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.main.row {
+  > * {
+  }
+
+  nav {
+    ul {
+      margin: 1em 0;
+      padding: 0;
+      text-align: left;
+
+      li {
+        list-style-type: none;
+        padding-left: none;
+        font-size: 0.85rem;
+        font-weight: 500;
+
+        a {
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  ul.contact-methods {
+    text-align: center;
+    li {
+      list-style-type: none;
+      padding-left: none;
+      font-size: 0.85rem;
     }
   }
 }

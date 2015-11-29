@@ -82,8 +82,8 @@ class CourseSeeds
 
     { credits_min: 4, credits_max: 4, interest: 50, course_codes: "ENG 595", title: "Topics in Film" },
 
-    { credits_min: 2, credits_max: 4, interest: 50, course_codes: "MUP 590", title: "Applied Music - Composition", repeatable: true },
-    { credits_min: 2, credits_max: 4, interest: 50, course_codes: "MUP 590", title: "Applied Music - Piano", repeatable: true },
+    { credits_min: 2, credits_max: 4, interest: 100, course_codes: "MUP 590", title: "Applied Music - Composition", repeatable: true },
+    { credits_min: 2, credits_max: 4, interest: 100, course_codes: "MUP 590", title: "Applied Music - Piano", repeatable: true },
 
     { credits_min: 2, credits_max: 2, interest: 50, course_codes: "MUS 323", title: "Fundamentals of Conducting" },
     { credits_min: 2, credits_max: 2, interest: 50, course_codes: "MUS 324", title: "Intermediate Conducting" },

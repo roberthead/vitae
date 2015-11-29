@@ -1,14 +1,31 @@
+@import 'colors';
+
+.course_list {
+  margin: 0 0 1em 0;
+
+  h3 {
+    margin: 0 0 1em 0;
+    font-weight: 500;
+    font-size: 1.382rem;
+  }
+}
+
 .course {
-  color: #000;
-  font-weight: 400;
+  color: $primary-text-color;
+  font-weight: 500;
 
   &.medium_value {
-    color: #5555;
+    color: $text-less-important-color;
     font-weight: 300;
   }
 
   &.low_value {
-    color: #999999;
+    color: $text-least-important-color;
     font-weight: 200;
+  }
+
+  .graduate_value {
+    color: #BBBBBB;
+    font-size: 0.382em;
   }
 }
