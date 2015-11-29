@@ -22,7 +22,13 @@ h3, h4 {
   margin: 0;
   padding: 0;
   background-color: #72a8ff;
-  background: url(asset_path('vitruvian')) -25px -10px no-repeat;
+  background: url(asset_path('vitruvian')) -25px -25px repeat-y;
   overflow: auto;
   overflow: -moz-scrollbars-none;
+
+  > header, > article {
+    margin: 2rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.85);
+  }
 }

@@ -19,7 +19,7 @@ class WorkSeeds
       creation_flexdate: "2015-11",
     },
     {
-      title: "Do Me a Platonic Solid",
+      title: "The Golden Solid",
       creation_flexdate: "2015-10",
       medium: "Sculpture",
     },
@@ -109,7 +109,7 @@ class WorkSeeds
     WORKS.each do |work_params|
       work_params.reverse_merge!(DEFAULT_ATTRIBUTES)
       work = Work.where(title: work_params[:title], creation_flexdate: work_params[:creation_flexdate]).first_or_create(work_params)
-      work.attributions.where(name_last: "Head", name_first: "Robert Emerson").first_or_create.tap do |attribution|
+      work.attributions.where(name_last: "Head", name_first: "Robert").first_or_create.tap do |attribution|
         attribution.update_attributes({ name_middle: "Emerson", position: 1, editor: false })
       end
     end

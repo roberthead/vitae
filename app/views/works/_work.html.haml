@@ -7,23 +7,9 @@
       .subtitle
         = work.subtitle
     .attribution
-      .name
-        = work.attribution.downcase
-      .date
-        = work.creation_date_string
-
-    / create_table "works", force: :cascade do |t|
-    /   t.string   "title"
-    /   t.string   "subtitle"
-    /   t.string   "attribution"
-    /   t.string   "medium"
-    /   t.string   "materials"
-    /   t.string   "process"
-    /   t.string   "creation_flexdate"
-    /   t.text     "artist_statement"
-    /   t.text     "description"
-    /   t.string   "collection_name"
-    /   t.string   "collection_position"
-    /   t.datetime "created_at",          null: false
-    /   t.datetime "updated_at",          null: false
-    / end
+      - if work.attribution.present?
+        .name
+          = work.attribution.downcase
+      - if work.creation_date_string
+        .date
+          = work.creation_date_string
