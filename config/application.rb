@@ -23,7 +23,7 @@ module Vitae
       g.test_framework  :rspec, fixture: false
       g.stylesheets     false
       g.javascripts     false
-      g.factory_girl
+      g.fixture_replacement :factory_girl
     end
 
     # Settings in config/environments/* take precedence over those specified here.
