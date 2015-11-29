@@ -1,0 +1,14 @@
+.course {
+  color: #000;
+  font-weight: 400;
+
+  &.medium_value {
+    color: #5555;
+    font-weight: 300;
+  }
+
+  &.low_value {
+    color: #999999;
+    font-weight: 200;
+  }
+}

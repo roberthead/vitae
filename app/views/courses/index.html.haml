@@ -1,2 +1,6 @@
-%h1 Courses#index
-%p Find me in app/views/courses/index.html.haml
+- @view[:enrollments].each do |quarter, quarter_enrollments|
+  %h3= quarter
+  = render courses
+
+%h3 Courses of Interest
+= render @view[:courses_by_code]

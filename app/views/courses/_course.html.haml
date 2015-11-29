@@ -1,0 +1,6 @@
+= div_for(course, class: ['row', course.graduate_value_level]) do
+  .designation_code.small-3.columns
+    = course.designation_codes.split(', ').first
+  .title.small-9.columns
+    = course.title
+    = "(#{course.credits_string})"

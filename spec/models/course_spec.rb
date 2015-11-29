@@ -24,4 +24,19 @@ RSpec.describe Course, type: :model do
       }.from(0).to(2)
     end
   end
+
+  describe ".untaken" do
+    let(:enrollment) { FactoryGirl.build(:enrollment) }
+    let(:course_taken) { enrollment.course }
+
+    before do
+      course.save
+      enrollment.save
+      Course.all.include?(course)
+      Course.all.include?(course_taken)
+    end
+
+    specify { course; expect(Course.untaken).to include(course) }
+    specify { expect(Course.untaken).not_to include(course_taken) }
+  end
 end
