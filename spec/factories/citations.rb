@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :citation do
-    work_name { Faker::Lorem.sentence }
+    title { Faker::Lorem.sentence }
     medium "Print"
   end
 end

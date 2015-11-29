@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20151129053351) do
   add_index "attributions", ["work_id"], name: "index_attributions_on_work_id", using: :btree
 
   create_table "citations", force: :cascade do |t|
-    t.string   "work_name"
+    t.string   "title"
     t.string   "publication_name"
     t.string   "publication_volume"
     t.string   "publication_number"

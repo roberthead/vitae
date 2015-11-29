@@ -1,7 +1,7 @@
 class CreateCitations < ActiveRecord::Migration
   def change
     create_table :citations do |t|
-      t.string :work_name
+      t.string :title
       t.string :publication_name
       t.string :publication_volume
       t.string :publication_number
