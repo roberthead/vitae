@@ -12,6 +12,7 @@ class CreateWorks < ActiveRecord::Migration
       t.text :description
       t.string :collection_name
       t.string :collection_position
+      t.string :media_url
 
       t.timestamps null: false
     end

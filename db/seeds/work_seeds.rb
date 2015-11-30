@@ -72,36 +72,43 @@ class WorkSeeds
       title: "morning with birds",
       creation_flexdate: "2015-03-02",
       medium: "Music Improvisation",
+      media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206074384398210",
     },
     {
       title: "relevé",
       creation_flexdate: "2015-03-03",
       medium: "Music Improvisation",
+      media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206090344397200",
     },
     {
       title: "layin' low",
       creation_flexdate: "2015-03-04",
       medium: "Music Improvisation",
+      media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206092808578803",
     },
     {
       title: "weak sauce",
       creation_flexdate: "2015-03-06",
       medium: "Music Improvisation",
+      media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206111080075579",
     },
     {
       title: "cinco",
       creation_flexdate: "2015-03-06",
       medium: "Music Improvisation",
+      media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206113447454762",
     },
     {
       title: "'saving' time",
       creation_flexdate: "2015-03-08",
       medium: "Music Improvisation",
+      media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206129494655932",
     },
     {
       title: "tiny universe",
       creation_flexdate: "2015-03-09",
       medium: "Music Improvisation",
+      media_url: "https://youtu.be/m_-WPCLnxyU",
     },
   ]
 
