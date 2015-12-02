@@ -26,9 +26,9 @@ class Course < ActiveRecord::Base
   end
 
   def graduate_value_level
-    if graduate_value > 75
+    if graduate_value >= 75
       'high_value'
-    elsif graduate_value > 50
+    elsif graduate_value >= 50
       'medium_value'
     else
       'low_value'
