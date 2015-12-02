@@ -18,9 +18,10 @@ ActiveRecord::Schema.define(version: 20151129193030) do
 
   create_table "annotations", force: :cascade do |t|
     t.integer  "citation_id"
+    t.string   "fast_citation"
     t.text     "body_html"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   add_index "annotations", ["citation_id"], name: "index_annotations_on_citation_id", using: :btree

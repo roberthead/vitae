@@ -1,1 +1,5 @@
-= render annotation.citation
+.annotation
+  %h4
+    = link_to annotation.citation.title, annotation
+  .citation
+    = h annotation.fast_citation.html_safe

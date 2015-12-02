@@ -62,6 +62,17 @@ class WorkSeeds
       EOS
     },
     {
+      title: "Basic Nutrition",
+      creation_flexdate: "2015-11",
+      medium: "Visual Art",
+      collection_name: "xArts Lab",
+      collection_position: 4,
+      primary_image_path: "basic-nutrition/basic-nutrition.jpg",
+      primary_thumbnail_path: "basic-nutrition/basic-nutrition-thumb.jpg",
+      materials: 'White Fudge Covered Oreos',
+      process: "Laser etched",
+    },
+    {
       title: "Ocho Andres",
       creation_flexdate: "2015-11",
       medium: "Visual Art",

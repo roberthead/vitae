@@ -1,2 +1,8 @@
-%h1 Annotations#show
-%p Find me in app/views/annotations/show.html.haml
+- annotation ||= @annotation
+.annotation
+  %h2
+    = annotation.citation.title
+  .citation
+    = h annotation.fast_citation.html_safe
+  .annotation-body
+    = h annotation.body_html.html_safe
