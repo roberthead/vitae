@@ -18,7 +18,9 @@
     .feature
       = image_tag(image_path("works/#{work.primary_image_path.presence}"))
   - if work.media_url.present?
-    = h(work.media_url.html_safe)
+    = link_to work.media_url, work.media_url, target: "_blank"
+  - if work.embed_code.present?
+    = h(work.embed_code.html_safe)
   - if work.materials.present?
     .materials
       %h3 Materials

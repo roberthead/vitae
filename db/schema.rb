@@ -103,6 +103,7 @@ ActiveRecord::Schema.define(version: 20151129193030) do
     t.string   "collection_name"
     t.string   "collection_position"
     t.string   "media_url"
+    t.string   "embed_code"
     t.string   "primary_image_path"
     t.string   "primary_thumbnail_path"
     t.string   "artifact_image_path"

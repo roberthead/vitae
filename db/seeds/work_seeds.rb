@@ -77,7 +77,16 @@ class WorkSeeds
       creation_flexdate: "2015-11",
       medium: "Visual Art",
       collection_name: "xArts Lab",
-      collection_position: 4,
+      collection_position: 5,
+      primary_image_path: "ocho-andres/ocho-andres.jpg",
+      primary_thumbnail_path: "ocho-andres/ocho-andres-thumb.png",
+      materials: 'vinyl, taskboard, transfer paper',
+      process: "Digitally controlled vinyl cut",
+      artist_statement: <<-EOS
+        <p>Shepard Fairey is a contemporary artist and graphic designer who famously injected himself into the public consciousness by giving away and otherwise distributing enormous quantities of his work. His Andre the Giant Has a Posse was exceptional for, arguably, creating a new type of what Walter Benjamin called “aura” by eschewing monetary value in exchange for the cultural currency of association with hip hop and skater subcultures. In 1994, under the threat of lawsuit, Fairey created a stylized version of Andre’s face, removed his trademarked name, and added the ominous text “OBEY” as an antiauthoritarian response. In 2008, mass production of Fairey’s “HOPE” poster helped elect America’s first minority president.</p>
+
+        <p>Ocho Andres appropriates, replicates, and duplicates Fairey’s work and re-contextualizes the imagery as an exploration of the relationship between the artist and society. The piece walks the line between mass consumer popular culture and conceptual commentary, between creative work and shameless ripoff, and between message and ambiguity. The sarcastic “OBEY” on a red field has been replaced by the directive to “REPRODUCE” on a green field. Oppression is replaced by stern encouragement. Threat is replaced by a playful call to action. The piece intends to encourage us to embrace the possibilities of new tools in a new world of endless reproducibility.</p>
+      EOS
     },
     {
       title: "Frost Baby",
@@ -88,7 +97,7 @@ class WorkSeeds
       title: "Jovian Sleighride",
       creation_flexdate: "2015",
       medium: "Music Composition",
-      media_url: <<-EOS
+      embed_code: <<-EOS
         <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219684400&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
       EOS
     },
