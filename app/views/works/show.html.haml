@@ -1,1 +1,32 @@
-hello
+- work ||= @work
+= div_for(work) do
+  %header
+    .title
+      = link_to(work) do
+        = work.title
+    - if work.subtitle
+      .subtitle
+        = work.subtitle
+    .attribution
+      - if work.attribution.present?
+        .name
+          = work.attribution
+      - if work.creation_date_string
+        .date
+          = work.creation_date_string
+  - if work.primary_image_path.present?
+    .feature
+      = image_tag(image_path("works/#{work.primary_image_path.presence}"))
+
+  - if work.materials.present?
+    .materials
+      %h3 Materials
+      = work.materials
+  - if work.process.present?
+    .process
+      %h3 Process
+      = work.process
+  - if work.artist_statement.present?
+    .artist_statement
+      %h3 Artist Statement
+      = h(work.artist_statement.html_safe)

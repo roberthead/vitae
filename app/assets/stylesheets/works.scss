@@ -1,5 +1,10 @@
 .work {
-  margin: 0 0 1rem 0;
+  margin: 1rem 0;
+  clear: left;
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -20,9 +25,19 @@
 
   .thumbnail {
     width: 100px;
+    height: 100px;
     float: left;
-    margin-right: 1em;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid black;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  .feature, .materials, .process, .artist_statement {
+    margin: 1rem 0;
   }
 
   .title {

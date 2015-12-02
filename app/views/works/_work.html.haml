@@ -1,8 +1,7 @@
 = div_for(work) do
   %header
-    - if work.primary_image_path
-      .thumbnail
-        = image_tag(image_path("works/#{work.primary_thumbnail_path}"))
+    .thumbnail
+      = image_tag(image_path("works/#{work.primary_thumbnail_path.presence || 'placeholder.png'}"))
     .title
       = link_to(work) do
         = work.title
@@ -12,7 +11,7 @@
     .attribution
       - if work.attribution.present?
         .name
-          = work.attribution.split(/\s+/).map(&:first).join
-      - if work.creation_date_string
+          = work.attribution_initials
+      - if work.creation_date_string.present?
         .date
-          = work.creation_date_string
+          = work.creation_date_string(month: :short)

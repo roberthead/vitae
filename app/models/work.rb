@@ -8,8 +8,12 @@ class Work < ActiveRecord::Base
     fast_attribution
   end
 
-  def creation_date_string
-    FlexibleDate.new(creation_flexdate).to_s(month: :short)
+  def attribution_initials
+    attribution.to_s.strip.split(/\s+/).map(&:first).join
+  end
+
+  def creation_date_string(options = {})
+    FlexibleDate.new(creation_flexdate).to_s(options)
   end
 
   private

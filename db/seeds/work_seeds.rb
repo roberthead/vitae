@@ -14,6 +14,17 @@ class WorkSeeds
       primary_thumbnail_path: "golden-solid/constructed-thumb.jpg",
       artifact_image_path: "golden-solid/design.png",
       artifact_thumbnail_path: "golden-solid/design-thumb.png",
+      materials: '1/16" basswood',
+      process: "The laser cut and etched",
+      artist_statement: <<-EOS
+        <p><emphasis>Golden Solid</emphasis> is an exploration of the mathematical relationships between the regular pentagon, the regular dodecahedron, and the golden ratio.</p>
+
+        <p>Plato believed that truth, beauty, and virtue were found in moderate and balanced proportions, a concept in philosophy known as the Golden Mean. He further described the regular solids as an expression of these proportions and theorized that the elements of the universe were composed of these shapes.</p>
+
+        <p>This piece explores "arbitrary levels of nesting" in the form of a dodecahedron, which is a 12-sided solid for which each face is a regular pentagon. The two-dimensional pattern of pentagons from which a dodecahedron is constructed itself fits within larger adjacent pentagons. A pattern of six pentagons can then be scaled (to the smaller portion of the golden ratio, mysteriously) and placed inside each of its constituent pentagons. And so on.</p>
+
+        <p>Nesting one, two, three, four, and five levels of pentagons creates emergent patterns that are difficult to express, but made possible by the precision of the laser cutter.</p>
+      EOS
     },
     {
       title: "You Be You",
