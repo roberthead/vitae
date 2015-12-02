@@ -236,6 +236,57 @@ class WorkSeeds
       one in the underneath
       EOS
     },
+    {
+      title: "bells",
+      creation_flexdate: "2015-12",
+      medium: "Poetry",
+      text_content: <<-EOS
+        Fog lifts, snow line falls
+        Warm village in the valley
+        Ring the Christmas bells!
+      EOS
+    },
+    {
+      title: "Farewell to a Room",
+      creation_flexdate: "2011-05-18",
+      medium: "Poetry",
+      text_content: <<-EOS
+        I am rooted by the scent, the smell
+        of old astrology books and cigarette smoke
+        lingering in the emptied home of my grandparents
+        now both deceased
+
+        in the library there was a desk
+        and, in 1983, on it sat one of the muses of my youth
+        an IBM PC, original model
+        5150 with Intel 8088 and 64k
+
+        I studied pages
+        stiff pages bound with three biting rings
+        arcane, wizardly wonders
+        BASIC
+
+        what couldn't have been more
+        than a few stolen hours on a dozen Sundays
+        with the glow of Redskins glory
+        behind the door
+
+        gave rise to my present
+        serving magic for hire
+        in the emerald city
+        and now San Francisco
+
+        I remember the beautiful cacophony
+        of dual floppy drives
+        the enchanting green glow
+        the thrill of achievement
+
+        and I am grateful to Grandmother Mary
+        for her curiosities
+        and to my grandfather
+        for building the home that housed them
+      EOS
+    },
   ]
 
   def self.seed!
