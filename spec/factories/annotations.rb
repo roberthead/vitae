@@ -3,6 +3,6 @@
 FactoryGirl.define do
   factory :annotation do
     citation
-    body_html "I read <emphasis>this</emphasis> article."
+    body_html "I read <em>this</em> article."
   end
 end

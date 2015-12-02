@@ -17,7 +17,7 @@ class WorkSeeds
       materials: '1/16" basswood',
       process: "The laser cut and etched",
       artist_statement: <<-EOS
-        <p><emphasis>Golden Solid</emphasis> is an exploration of the mathematical relationships between the regular pentagon, the regular dodecahedron, and the golden ratio.</p>
+        <p><em>Golden Solid</em> is an exploration of the mathematical relationships between the regular pentagon, the regular dodecahedron, and the golden ratio.</p>
 
         <p>Plato believed that truth, beauty, and virtue were found in moderate and balanced proportions, a concept in philosophy known as the Golden Mean. He further described the regular solids as an expression of these proportions and theorized that the elements of the universe were composed of these shapes.</p>
 
