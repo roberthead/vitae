@@ -9,7 +9,7 @@ class Work < ActiveRecord::Base
   end
 
   def creation_date_string
-    FlexibleDate.new(creation_flexdate).to_s
+    FlexibleDate.new(creation_flexdate).to_s(month: :short)
   end
 
   private
