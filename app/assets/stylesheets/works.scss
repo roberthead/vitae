@@ -18,6 +18,13 @@
     }
   }
 
+  .thumbnail {
+    width: 100px;
+    float: left;
+    margin-right: 1em;
+    border: 1px solid black;
+  }
+
   .title {
     font-size: 1.618rem;
     letter-spacing: 0.236rem;

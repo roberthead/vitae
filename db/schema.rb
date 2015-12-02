@@ -102,8 +102,13 @@ ActiveRecord::Schema.define(version: 20151129193030) do
     t.string   "collection_name"
     t.string   "collection_position"
     t.string   "media_url"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.string   "primary_image_path"
+    t.string   "primary_thumbnail_path"
+    t.string   "artifact_image_path"
+    t.string   "artifact_thumbnail_path"
+    t.string   "download_url"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
     t.integer  "course_id"
   end
 

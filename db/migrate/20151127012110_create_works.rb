@@ -13,6 +13,11 @@ class CreateWorks < ActiveRecord::Migration
       t.string :collection_name
       t.string :collection_position
       t.string :media_url
+      t.string :primary_image_path
+      t.string :primary_thumbnail_path
+      t.string :artifact_image_path
+      t.string :artifact_thumbnail_path
+      t.string :download_url
 
       t.timestamps null: false
     end

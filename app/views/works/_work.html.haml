@@ -1,5 +1,8 @@
 = div_for(work) do
   %header
+    - if work.primary_image_path
+      .thumbnail
+        = image_tag(image_path("works/#{work.primary_thumbnail_path}"))
     .title
       = link_to(work) do
         = work.title
@@ -9,7 +12,7 @@
     .attribution
       - if work.attribution.present?
         .name
-          = work.attribution.downcase
+          = work.attribution.split(/\s+/).map(&:first).join
       - if work.creation_date_string
         .date
           = work.creation_date_string
