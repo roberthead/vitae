@@ -32,7 +32,7 @@ class WorkSeeds
       collection_name: "xArts Lab",
       collection_position: 2,
       primary_image_path: "you-be-you/you-be-you.jpg",
-      primary_thumbnail_path: "golden-solid/you-be-you-thumb.jpg",
+      primary_thumbnail_path: "you-be-you/you-be-you-thumb.jpg",
       materials: '1/4" poplar',
       process: "Laser cut and etched",
       artist_statement: <<-EOS
