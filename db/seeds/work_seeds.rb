@@ -15,7 +15,7 @@ class WorkSeeds
       artifact_image_path: "golden-solid/design.png",
       artifact_thumbnail_path: "golden-solid/design-thumb.png",
       materials: '1/16" basswood',
-      process: "The laser cut and etched",
+      process: "Laser cut and etched",
       artist_statement: <<-EOS
         <p><em>Golden Solid</em> is an exploration of the mathematical relationships between the regular pentagon, the regular dodecahedron, and the golden ratio.</p>
 
@@ -31,6 +31,19 @@ class WorkSeeds
       creation_flexdate: "2015-11",
       collection_name: "xArts Lab",
       collection_position: 2,
+      primary_image_path: "you-be-you/you-be-you.jpg",
+      primary_thumbnail_path: "golden-solid/you-be-you-thumb.jpg",
+      materials: '1/4" poplar',
+      process: "Laser cut and etched",
+      artist_statement: <<-EOS
+        <p><em>You Be You</em> is an exploration of the sometimes ambiguous and mutable nature of gender.</p>
+
+        <p>My intention is editorial. The piece suggests a decent human response to members of our community who struggle with or assert a new identity – plain and uncomplicated acceptance.</p>
+
+        <p>I chose to present the imagery in the form of a child's puzzle for two reasons. First, the current social and political issues surrounding gender are cast as complex issues that many adults avoid discussing with children. Second, I believe the message expresses basic human dignity that can be and is understood intuitively by toddlers.</p>
+
+        <p>The pieces can be assembled using two options each of three sections of the full person. Regardless of configuration, we respond simply, “Ok.”</p>
+      EOS
     },
     {
       title: "The Treachery of Magritte",
