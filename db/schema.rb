@@ -98,6 +98,7 @@ ActiveRecord::Schema.define(version: 20151129193030) do
     t.string   "materials"
     t.string   "process"
     t.string   "creation_flexdate"
+    t.text     "text_content"
     t.text     "artist_statement"
     t.text     "description"
     t.string   "collection_name"

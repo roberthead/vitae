@@ -192,6 +192,50 @@ class WorkSeeds
       collection_name: "Improvisations",
       collection_position: 7,
     },
+    {
+      title: "wood and rosin",
+      creation_flexdate: "2012",
+      medium: "Poetry",
+      text_content: <<-EOS
+      how is it, stranger,
+      that you came to know
+      the hidden contents of this heart?
+
+      who divulged my secrets
+      my private designs
+      that you might draw them out
+      into the air
+      with your bow
+
+      with wood and rosin
+      string and empty space?
+
+      who disclosed my business
+      that you might
+      assault me unawares
+      in this terminal passage
+      now enchanted
+      transfigured
+      made prayerful
+
+      you play the innocent
+      but your merciless strokes
+      lay siege to these halls
+      and I stand transfixed
+
+      my longings stand betrayed
+      my sufferings
+      the deep self
+
+      is it, indeed, that I am as nothing
+      my spirit pretentious and simple?
+
+      or is it that somehow
+      we are something
+
+      one in the underneath
+      EOS
+    },
   ]
 
   def self.seed!

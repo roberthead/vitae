@@ -33,3 +33,6 @@
     .artist_statement
       %h3 Artist Statement
       = h(work.artist_statement.html_safe)
+  - if work.text_content.present?
+    .content
+      = h work.text_content.gsub(/\n/, "<br>").html_safe
