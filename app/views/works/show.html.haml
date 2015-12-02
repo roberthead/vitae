@@ -17,7 +17,8 @@
   - if work.primary_image_path.present?
     .feature
       = image_tag(image_path("works/#{work.primary_image_path.presence}"))
-
+  - if work.media_url.present?
+    = h(work.media_url.html_safe)
   - if work.materials.present?
     .materials
       %h3 Materials

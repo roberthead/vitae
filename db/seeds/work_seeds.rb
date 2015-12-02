@@ -17,7 +17,7 @@ class WorkSeeds
       materials: '1/16" basswood',
       process: "Laser cut and etched",
       artist_statement: <<-EOS
-        <p><em>Golden Solid</em> is an exploration of the mathematical relationships between the regular pentagon, the regular dodecahedron, and the golden ratio.</p>
+        <p><span class="work-of-art-title">Golden Solid</span> is an exploration of the mathematical relationships between the regular pentagon, the regular dodecahedron, and the golden ratio.</p>
 
         <p>Plato believed that truth, beauty, and virtue were found in moderate and balanced proportions, a concept in philosophy known as the Golden Mean. He further described the regular solids as an expression of these proportions and theorized that the elements of the universe were composed of these shapes.</p>
 
@@ -36,7 +36,7 @@ class WorkSeeds
       materials: '1/4" poplar',
       process: "Laser cut and etched",
       artist_statement: <<-EOS
-        <p><em>You Be You</em> is an exploration of the sometimes ambiguous and mutable nature of gender.</p>
+        <p><span class="work-of-art-title">You Be You</span> is an exploration of the sometimes ambiguous and mutable nature of gender.</p>
 
         <p>My intention is editorial. The piece suggests a decent human response to members of our community who struggle with or assert a new identity – plain and uncomplicated acceptance.</p>
 
@@ -51,6 +51,15 @@ class WorkSeeds
       medium: "Visual Art",
       collection_name: "xArts Lab",
       collection_position: 3,
+      primary_image_path: "treachery-of-magritte/treachery-of-magritte.jpg",
+      primary_thumbnail_path: "treachery-of-magritte/treachery-of-magritte-thumb.jpg",
+      materials: 'iPhone 6',
+      process: "Laser etched",
+      artist_statement: <<-EOS
+        <p>René Magritte's seminal painting <span class="work-of-art-title">The Treachery of Images</span> illustrates the distance between representation and being. His work evokes comparison to Alfred Korzybski’s observation that “The word is not the thing” and “The map is not the territory”. Magritte revisited the idea later in life with Ceci n'est pas pomme, which sold at Christie’s in 2013 for 4.6 million dollars.</p>
+
+        <p>This work, <span class="work-of-art-title">The Treachery of Magritte</span>, is intended to celebrate the artist’s insight and incorporates elements of his source imagery, specifically the french text and tracings of the frame. Additionally, it explores the lexical complexity of the use of symbols in modern corporate branding. Apple, Inc. sells tens of millions of computer and communications devices every year with one of the world’s most recognizable logos. However, an iPhone is not an apple. You can’t eat it and it doesn’t grow on trees. And yet this work is engraved directly upon an Apple, Inc. designed and manufactured artifact.</p>
+      EOS
     },
     {
       title: "Ocho Andres",
@@ -68,6 +77,9 @@ class WorkSeeds
       title: "Jovian Sleighride",
       creation_flexdate: "2015",
       medium: "Music Composition",
+      media_url: <<-EOS
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219684400&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+      EOS
     },
     {
       title: "On the Ground",
