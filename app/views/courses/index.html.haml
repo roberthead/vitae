@@ -1,3 +1,5 @@
+= render partial: 'shared/thesis'
+
 - @view[:enrollments].each do |quarter, quarter_enrollments|
   .course_list
     %h3= FlexibleDate.new(quarter)
