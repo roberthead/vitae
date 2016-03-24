@@ -45,7 +45,7 @@ class CourseSeeds
     },
     {
       title: "Orchestration",
-      course_codes: ["MUS 441", "MUS 541"],
+      course_codes: ["MUS 541", "MUS 441"],
       credits_min: 3,
       credits_max: 3,
       interest: 100,
