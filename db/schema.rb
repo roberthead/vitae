@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151129193030) do
+ActiveRecord::Schema.define(version: 20170308122002) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20151129193030) do
     t.integer  "citation_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.boolean  "translator"
   end
 
   add_index "attributions", ["citation_id"], name: "index_attributions_on_citation_id", using: :btree

@@ -10,9 +10,9 @@ RSpec.describe Citation, type: :model do
   context "with contributors" do
     let(:primary_contributor) { FactoryGirl.build(:attribution, citation: citation) }
     let(:secondary_contributor_1) { FactoryGirl.build(:attribution, citation: citation) }
-    let(:secondary_contributor_2) { FactoryGirl.build(:attribution, citation: citation) }
+    let(:secondary_contributor_2) { FactoryGirl.build(:attribution, citation: citation, editor: true) }
     let(:expected_attribution_pattern) do
-      /#{primary_contributor.name_last}, #{primary_contributor.name_first}( \w\.)?, #{secondary_contributor_1.name_first}( \w\.)? #{secondary_contributor_1.name_last}, and #{secondary_contributor_2.name_first}( \w\.)? #{secondary_contributor_2.name_last}/
+      /#{primary_contributor.name_last}, #{primary_contributor.name_first}( \w\.)?, #{secondary_contributor_1.name_first}( \w\.)? #{secondary_contributor_1.name_last}, and Ed\. #{secondary_contributor_2.name_first}( \w\.)? #{secondary_contributor_2.name_last}/
     end
 
     before do

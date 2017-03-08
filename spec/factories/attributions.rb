@@ -6,6 +6,6 @@ FactoryGirl.define do
     name_first { Faker::Name.first_name }
     name_middle { [nil, Faker::Name.first_name].sample }
     citation
-    editor { [false, true].sample }
+    editor { false }
   end
 end

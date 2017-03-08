@@ -19,11 +19,15 @@ class Attribution < ActiveRecord::Base
   private
 
   def mla_primary_contributor_name
-    "#{name_last}, #{name_first} #{name_middle_initial}"
+    [role_prefix, "#{name_last}, #{name_first_and_middle}"].select(&:present?).join(' ')
+  end
+
+  def name_first_and_middle
+    [name_first, name_middle_initial].select(&:present?).join(' ')
   end
 
   def mla_secondary_contributor_name
-    "#{name_first} #{name_middle_initial} #{name_last}"
+    [role_prefix, name_first, name_middle_initial, name_last].select(&:present?).join(' ')
   end
 
   def ensure_position
@@ -33,6 +37,14 @@ class Attribution < ActiveRecord::Base
         candidate += 1
       end
       self.position = candidate
+    end
+  end
+
+  def role_prefix
+    if editor?
+      "Ed."
+    elsif translator?
+      "Trans."
     end
   end
 end

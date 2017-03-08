@@ -4,6 +4,45 @@ class AnnotationSeeds
   ANNOTATIONS = [
     {
       citation: {
+        title: "The Study of Counterpoint from Johann Joseph Fux's Gradus ad Parnassum",
+        publishing_location: "London",
+        publishing_company: "Open University",
+        publishing_flexdate: "1965",
+        medium: "Print",
+        attributions: [
+          { name_last: "Fux", name_first: "Johann Joseph" },
+          { name_last: "Mann", name_first: "Alfred", translator: true },
+        ]
+      },
+      body_html: <<-EOS.squish
+        <p>Joseph Fux's Gradus ad Parnassum, published in 1725, is the original masterpiece of counterpoint instruction. This text was studied by bach, haydn, mozart, and beethoven. This book is divided into three sections. The first section is lecture style and discusses basic theory and definitions, including intervals, contrapuntal motion, and consonance. Several of the basic rules of counterpoint are presented in it's conclusion. He also explores frequency ratios and tuning by math and by ear.</p>
+
+        <p>The second section is the most famous portion. The species are counterpoint are first codified in the form we understand today in this text. The content is written as a narrative, tutorial conversation between Josephus, representing the student, and Aloysius, who represents the master Palestrina. The tone is delightful and expresses a healthy relationship between an encouraging, patient master and a diligent and passionate student.</p>
+
+        <p>Each species of counterpoint (one-to-one, two-to-one, four-to-one, suspensions, and florid) are given a chapter and the reader is encouraged to build their skills by mastering each in sequence. Through these chapters, the basic rules of counterpoint are established and expressed with sufficient clarity to be codified in software analysis tools.</p>
+      EOS
+    },
+
+    {
+      citation: {
+        title: "Artificial Intelligence, Education and Music: The Use of Artificial Intelligence to Encourage and Facilitate Music Composition by Novices.",
+        publishing_location: "London",
+        publishing_company: "Open University",
+        publishing_flexdate: "1989",
+        medium: "Print",
+        attributions: [
+          { name_last: "Holland", name_first: "Simon" }
+        ]
+      },
+      body_html: <<-EOS.squish
+        <p>This doctoral dissertation explores two approaches to teaching composition to untrained musicians. The first is music software called Harmony Space in which shapes and patterns are arranged to create a composition. The second is an intelligent tutoring system (ITS)—a knowledge system that tutors the students.</p>
+
+        <p>Holland restates the goal of composition as "to compose something interesting" (Levitt, 1985).</p>
+      EOS
+    },
+
+    {
+      citation: {
         title: "The Work of Art in the Age of Mechanical Reproduction",
         publication_name: "Zeitschrift für Sozialforschung",
         publication_volume: "5",
