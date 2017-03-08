@@ -110,54 +110,54 @@ class WorkSeeds
         <p>Ocho Andres appropriates, replicates, and duplicates Fairey’s work and re-contextualizes the imagery as an exploration of the relationship between the artist and society. The piece walks the line between mass consumer popular culture and conceptual commentary, between creative work and shameless ripoff, and between message and ambiguity. The sarcastic “OBEY” on a red field has been replaced by the directive to “REPRODUCE” on a green field. Oppression is replaced by stern encouragement. Threat is replaced by a playful call to action. The piece intends to encourage us to embrace the possibilities of new tools in a new world of endless reproducibility.</p>
       EOS
     },
-    {
-      title: "Frost Baby",
-      creation_flexdate: "2005",
-      medium: "Music Composition",
-    },
-    {
-      title: "Jovian Sleighride",
-      creation_flexdate: "2015",
-      medium: "Music Composition",
-      embed_code: <<-EOS
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219684400&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-      EOS
-    },
-    {
-      title: "On the Ground",
-      creation_flexdate: "2008",
-      medium: "Music Composition",
-      collection_name: "Hurricane Hunters",
-      collection_position: 1,
-    },
-    {
-      title: "Into the Storm - Entry",
-      creation_flexdate: "2008",
-      medium: "Music Composition",
-      collection_name: "Hurricane Hunters",
-      collection_position: 2,
-    },
-    {
-      title: "Into the Storm - Wonder",
-      creation_flexdate: "2008",
-      medium: "Music Composition",
-      collection_name: "Hurricane Hunters",
-      collection_position: 3,
-    },
-    {
-      title: "Into the Storm - Fury",
-      creation_flexdate: "2008",
-      medium: "Music Composition",
-      collection_name: "Hurricane Hunters",
-      collection_position: 4,
-    },
-    {
-      title: "BBCNNBC",
-      creation_flexdate: "2008",
-      medium: "Music Composition",
-      collection_name: "Hurricane Hunters",
-      collection_position: 5,
-    },
+    # {
+    #   title: "Frost Baby",
+    #   creation_flexdate: "2005",
+    #   medium: "Music Composition",
+    # },
+    # {
+    #   title: "Jovian Sleighride",
+    #   creation_flexdate: "2015",
+    #   medium: "Music Composition",
+    #   embed_code: <<-EOS
+    #     <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219684400&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    #   EOS
+    # },
+    # {
+    #   title: "On the Ground",
+    #   creation_flexdate: "2008",
+    #   medium: "Music Composition",
+    #   collection_name: "Hurricane Hunters",
+    #   collection_position: 1,
+    # },
+    # {
+    #   title: "Into the Storm - Entry",
+    #   creation_flexdate: "2008",
+    #   medium: "Music Composition",
+    #   collection_name: "Hurricane Hunters",
+    #   collection_position: 2,
+    # },
+    # {
+    #   title: "Into the Storm - Wonder",
+    #   creation_flexdate: "2008",
+    #   medium: "Music Composition",
+    #   collection_name: "Hurricane Hunters",
+    #   collection_position: 3,
+    # },
+    # {
+    #   title: "Into the Storm - Fury",
+    #   creation_flexdate: "2008",
+    #   medium: "Music Composition",
+    #   collection_name: "Hurricane Hunters",
+    #   collection_position: 4,
+    # },
+    # {
+    #   title: "BBCNNBC",
+    #   creation_flexdate: "2008",
+    #   medium: "Music Composition",
+    #   collection_name: "Hurricane Hunters",
+    #   collection_position: 5,
+    # },
     {
       title: "morning with birds",
       creation_flexdate: "2015-03-02",
