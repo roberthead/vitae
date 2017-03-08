@@ -5,6 +5,16 @@ class WorkSeeds
 
   WORKS = [
     {
+      title: "Invention in G Major",
+      creation_flexdate: "2016-11",
+      collection_name: 'Music Compositions',
+      collection_position: 1,
+      primary_thumbnail_path: "invention/invention-in-g-major.png",
+      media_url: "https://flat.io/score/583f6d53ac39360fbeb68078-two-part-invention-in-g-major",
+      process: 'Eighteenth-century counterpoint',
+    },
+
+    {
       title: "Spirographique",
       creation_flexdate: "2016-11",
       medium: "Web art",
