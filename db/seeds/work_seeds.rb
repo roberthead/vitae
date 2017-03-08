@@ -5,6 +5,28 @@ class WorkSeeds
 
   WORKS = [
     {
+      title: "Spirographique",
+      creation_flexdate: "2016-11",
+      medium: "Web art",
+      collection_name: "Art of Data",
+      collection_position: 1,
+      primary_image_path: "spirographique/spirographique.png",
+      primary_thumbnail_path: "spirographique/spirographique-thumb.png",
+      media_url: "http://codepen.io/roberthead/full/kkVZKL",
+      materials: 'HTML, CSS, Javascript',
+      process: "coding",
+      artist_statement: <<-EOS
+        <p>This process drawing, <em>Spirographique</em>, is a simulation of a Spirograph (<a href="https://en.wikipedia.org/wiki/Spirograph" target="_blank">https://en.wikipedia.org/wiki/Spirograph</a>), a popular toy that creates geometrical designs. My drawing process closely matches the physical characteristics of the meat-space version. An outer ring, as large as the canvas allows, provides the framework within which a smaller ring rolls around the circumference. The smaller ring has a random size and a pen hole a random distance from the center. The random ratio of the inner to outer rings and the position of the pen hole creates geometric relationships that result in a design. Unlike a real Spirograph, I was able to draw with a pen that cycles through the color spectrum at a velocity selected at random. Similarly, the stroke weight of the pen is selected randomly within a small and reasonable range.
+
+      <p><a href="http://codepen.io/roberthead/full/kkVZKL/" target="_blank">http://codepen.io/roberthead/full/kkVZKL/</a></p>
+
+      <p>My design was motivated by a desire to work with geometric relationships that required me to express a little bit of trigonometry in my code. The results that I achieved were very close to my initial expectations. Because the Spirograph is a familiar part of our culture that I played with as a child, I had a fairly strong understanding of the range of possibilities. And indeed, the procedure does reproduce those experiences. The resulting designs vary in their aesthetic interest. For example, if the randomly selected ratios are very close to integer relationships, the pen will draw nearly over the first pass and the design will be simpler, thicker, and slower to evolve than most other results.</p>
+
+      <p>One of the surprises of this project was the result of allowing the procedure to run for a long period of time. The computer, of course, has infinite patience and doesn't tire or get bored. Consequently, if we let it run, we get to experience results that would be difficult to execute in the real world. From these longer-running images secondary effects such as moiré patterns often emerge. I find that I enjoy the evolution of the designs from the initial, first-minute results to the denser patterns of color. Additionally, I was surprised by the meditative quality of watching the line travel in endless swooping arcs. Enjoy!</p>
+      EOS
+    },
+
+    {
       title: "The Golden Solid",
       creation_flexdate: "2015-10",
       medium: "Sculpture",
@@ -250,6 +272,8 @@ class WorkSeeds
       title: "Farewell to a Room",
       creation_flexdate: "2011-05-18",
       medium: "Poetry",
+      # primary_image_path: "farewell/farewell.jpg",
+      primary_thumbnail_path: "farewell/farewell-thumb.jpg",
       text_content: <<-EOS
         I am rooted by the scent, the smell
         of old astrology books and cigarette smoke

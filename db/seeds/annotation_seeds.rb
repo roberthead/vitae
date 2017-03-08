@@ -5,8 +5,8 @@ class AnnotationSeeds
     {
       citation: {
         title: "The Study of Counterpoint from Johann Joseph Fux's Gradus ad Parnassum",
-        publishing_location: "London",
-        publishing_company: "Open University",
+        publishing_location: "New York",
+        publishing_company: "W W. Norton & Company, Inc.",
         publishing_flexdate: "1965",
         medium: "Print",
         attributions: [
@@ -14,12 +14,39 @@ class AnnotationSeeds
           { name_last: "Mann", name_first: "Alfred", translator: true },
         ]
       },
+      fast_citation: %q[Fux, Johann Joseph and Trans. Alfred Mann. <em>The Study of Counterpoint from Johann Joseph Fux's Gradus ad Parnassum</em>. London: Open University, 1989. Print.],
       body_html: <<-EOS.squish
-        <p>Joseph Fux's Gradus ad Parnassum, published in 1725, is the original masterpiece of counterpoint instruction. This text was studied by bach, haydn, mozart, and beethoven. This book is divided into three sections. The first section is lecture style and discusses basic theory and definitions, including intervals, contrapuntal motion, and consonance. Several of the basic rules of counterpoint are presented in it's conclusion. He also explores frequency ratios and tuning by math and by ear.</p>
+        <p>Joseph Fux's Gradus ad Parnassum, published in 1725, is the original masterpiece of counterpoint instruction and was studied by Bach, Haydn, Mozart, and Beethoven. This book is divided into three sections. The first section is lecture style and discusses basic theory and definitions, including intervals, contrapuntal motion, and consonance. Several of the basic rules of counterpoint are presented in it's conclusion. Fux also explores frequency ratios and tuning alternatively by math and by ear.</p>
 
-        <p>The second section is the most famous portion. The species are counterpoint are first codified in the form we understand today in this text. The content is written as a narrative, tutorial conversation between Josephus, representing the student, and Aloysius, who represents the master Palestrina. The tone is delightful and expresses a healthy relationship between an encouraging, patient master and a diligent and passionate student.</p>
+        <p>The second section is the portion which earned the book its fame. The species of counterpoint are first codified in the form we understand today in this text. The content is written as a narrative, tutorial conversation between Josephus, representing the student, and Aloysius, who represents the master Palestrina. The tone is delightful and expresses a healthy relationship between an encouraging, patient master and a diligent and passionate student.</p>
 
-        <p>Each species of counterpoint (one-to-one, two-to-one, four-to-one, suspensions, and florid) are given a chapter and the reader is encouraged to build their skills by mastering each in sequence. Through these chapters, the basic rules of counterpoint are established and expressed with sufficient clarity to be codified in software analysis tools.</p>
+        <p>Each species of counterpoint (one-to-one, two-to-one, four-to-one, suspensions, and florid) is given a chapter and the reader is encouraged to build their skills by mastering each in sequence. Through these chapters, the basic rules of counterpoint are established and expressed with sufficient clarity to be codified in software analysis tools.</p>
+      EOS
+    },
+
+    {
+      citation: {
+        title: "Composing first species counterpoint with a variable neighbourhood search algorithm",
+        publication_name: "Journal of Mathematics and the Arts",
+        publishing_flexdate: "Nov 2012",
+        pages_start: 169,
+        pages_end: 189,
+        medium: "Online",
+        attributions: [
+          { name_last: "Jos", name_first: "De Mul" }
+        ]
+      },
+      fast_citation: %q[Herremans, Dorien and Kenneth Sörensen. "Composing first species counterpoint with a variable neighbourhood search algorithm." <em>Journal of Mathematics and the Arts</em>. 6.4 (Nov 2012). 169-189. Online.],
+      body_html: <<-EOS.squish
+        <p>In this paper, Herremans and Sorensen describe Optimuse, computer-aided composition (CAC) software using a variable neighborhood search algorithm to compose one-to-one cantus firmus and counterpoint melody lines.</p>
+
+        <p>Automated composition goes back to Mozart's dice game in the 18th century. In the age of computers, we can use metaheuristic algorithms to find melodies that are optimized for adherence to a particular style. Counterpoint, as described by Johann Joseph Fux in Gradus ad Parnassum, has clear and easily measurable rules.</p>
+
+        <p>The authors describe three metaheuristic categories: local search (e.g. VNS), constructive (e.g. ant colony), and population based (e.g. genetic algorithms).</p>
+
+        <p>This research uses an automatic system that scores the adherence of melodies to Fux's rules both horizontally and vertically.</p>
+
+        <p>Their implementation of variable neighborhood search generates music by tweaking a melody until its fitness is optimized. The results were the generation of two-part counterpoint that scores very well according to their fitness metrics.</p>
       EOS
     },
 
@@ -34,6 +61,7 @@ class AnnotationSeeds
           { name_last: "Holland", name_first: "Simon" }
         ]
       },
+      fast_citation: %q[Holland, Simon. <em>Artificial Intelligence, Education and Music: The Use of Artificial Intelligence to Encourage and Facilitate Music Composition by Novices</em>. London: Open University, 1989. Print.],
       body_html: <<-EOS.squish
         <p>This doctoral dissertation explores two approaches to teaching composition to untrained musicians. The first is music software called Harmony Space in which shapes and patterns are arranged to create a composition. The second is an intelligent tutoring system (ITS)—a knowledge system that tutors the students.</p>
 
