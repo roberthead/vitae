@@ -9901,7 +9901,7 @@ th.hide-for-touch {
   font-size: 14px;
 }
 /* line 122, /Users/roberthead/github.com/roberthead/vitae/app/assets/stylesheets/resumes.scss.erb */
-.resumes div .job_title {
+.resumes div .position {
   font-style: italic;
 }
 /* line 126, /Users/roberthead/github.com/roberthead/vitae/app/assets/stylesheets/resumes.scss.erb */

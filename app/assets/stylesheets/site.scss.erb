@@ -14,10 +14,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.618rem;
+  font-size: 1.382rem;
 }
 
-h3, h4 {
+h3 {
+  font-size: 1.236rem;
+}
+
+h4 {
   font-size: 1rem;
 }
 
@@ -109,15 +113,16 @@ footer {
     }
   }
 }
+
 .about__content-header {
   margin: 1rem 0;
   padding: 8rem 2rem 2rem 2rem;
   text-align: right;
-  text-shadow: 2px 2px $vitruvian-background-color;
+  text-shadow: 2px 2px #555555;
   font-size: 2rem;
   color: white;
   background-color: #555555;
-  background: url(asset_path('stories/rob_head.jpg')) center 0px;
+  background: url(asset_path('stories/rob_head-brutalist.jpg')) center 0px;
   background-size: cover;
   overflow: auto;
   overflow: -moz-scrollbars-none;
@@ -125,7 +130,7 @@ footer {
 }
 
 .about__image-container {
-  width: 50%;
+  max-width: 20em;
 
   &--right {
     float: right;
