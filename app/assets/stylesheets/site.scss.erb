@@ -114,8 +114,8 @@ footer {
   }
 }
 
-.about__content-header {
-  margin: 1rem 0;
+.home__banner {
+  margin: 0 0 1rem 0;
   padding: 8rem 2rem 2rem 2rem;
   text-align: right;
   text-shadow: 2px 2px #555555;
@@ -126,7 +126,22 @@ footer {
   background-size: cover;
   overflow: auto;
   overflow: -moz-scrollbars-none;
+
   height: 200px;
+}
+
+@media only screen and (max-width:1024px) {
+  .home__banner {
+    padding: 8rem 1.5rem 1.5rem 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home__banner {
+    padding: 8rem 1rem 1rem 1rem;
+    font-size: 1rem;
+  }
 }
 
 .about__image-container {

@@ -1,0 +1,51 @@
+= render partial: 'shared/thesis_header'
+
+%h2#overview Overview
+%p
+  Research Area: Computer assisted music composition (CAC)
+  %br
+  Research Topic: Software-guided counterpoint
+  %br
+  Worldview: Pragmatic
+  %br
+  Research Method: Mixed
+  %br
+  Research Design: Embedded mixed methods
+
+%h2#research-questions Research Questions
+
+%p How can software-based musical analysis tools be developed to assist in the composition of notated music in the style of eighteenth-century Baroque counterpoint?
+
+%p How can rule sets for a given musical style, such as eighteenth-century Baroque counterpoint, be codified in software to assess the level of adherence of musical material to that style?
+
+%p How closely can software-based musical analysis tools match the quality assessments of style experts?
+
+%p How can software-based musical analysis tools be used to suggest generated material that adheres to the given style?
+
+%p How can software analysis tools be used to assess the suitability of a melody to canon?
+
+%h2#hypotheses Hypotheses
+
+%p Undergraduate music students compose higher-scoring inventions using the tool compared to before exposure.
+
+%p Undergraduate music students compose higher-scoring inventions after exposure to the tool compared to before exposure.
+
+%h2#code Code
+
+%h4 HeadMusic
+
+%p
+  HeadMusic is a ruby library that encapsulates both the rudiments of western music theory and style-based analysis tools. The rudiments encoded include concepts such as pitches, keys, scales, intervals, rhythm, consonance and dissonance, octaves, and melodic and harmonic functional intervals. The style analysis applies a collection of rules to assess the adherence of a composition to the common practices of a particular style, beginning with Fuxian species counterpoint.
+
+%p.github-link
+  = link_to('https://github.com/roberthead/head_music', target: 'github') do
+    https://github.com/roberthead/head_music
+
+%h4 Juxtacompose
+
+%p
+  Juxtacompose is a Web application built on the foundation of HeadMusic. With this tool, a composer will be able to get live analysis of a counterpoint composition as it's being composed.
+
+%p.github-link
+  = link_to('https://github.com/roberthead/juxtacompose', target: 'github') do
+    https://github.com/roberthead/juxtacompose
