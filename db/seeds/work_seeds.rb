@@ -37,6 +37,86 @@ class WorkSeeds
     },
 
     {
+      title: "Two-Part Invention No. 9 in F minor",
+      creation_flexdate: "2016",
+      collection_name: 'Music Editions',
+      collection_position: 1,
+      primary_image_path: "bach-invention-9/invention9-BWV780.pdf",
+      primary_thumbnail_path: "bach-invention-9/bach-invention-9-thumb.png",
+      process: 'Eighteenth-century counterpoint',
+      artist_statement: <<-EOS,
+        <p><span class="work-of-art-title">Invention No. 9 in F Minor</span> is one of thirteen two-part 'inventions' composed by Baroque master J.S. Bach. I prepared this edition in the process of my own studies on the piano.</p>
+      EOS
+      attributions: [
+        {
+          name_last: "Bach",
+          name_first: "Johann",
+          name_middle: "Sebastian",
+          position: 0,
+        },
+        {
+          name_last: "Head",
+          name_first: "Robert",
+          name_middle: "Emerson",
+          position: 1,
+          editor: true
+        },
+      ]
+    },
+
+    {
+      title: "Golan Levin on Overview Visualizations",
+      creation_flexdate: "2016-Fall",
+      collection_name: 'Essays',
+      collection_position: 0,
+      primary_thumbnail_path: "overview-visualizations/overview-visualizations.png",
+      primary_image_path: "overview-visualizations/overview-visualizations.pdf",
+      process: 'Essay',
+      artist_statement: <<-EOS
+        <p>This essay was written for coursework in Emerging Media and Digital Arts.</p>
+      EOS
+    },
+
+    {
+      title: "Visualizing Complexity: Mapping Patterns of Information",
+      creation_flexdate: "2016-Fall",
+      collection_name: 'Essays',
+      collection_position: 1,
+      primary_thumbnail_path: "visualizing-complexity/visualizing-complexity.png",
+      primary_image_path: "visualizing-complexity/visualizing-complexity.pdf",
+      process: 'Essay',
+      artist_statement: <<-EOS
+        <p>This essay was written for coursework in Emerging Media and Digital Arts.</p>
+      EOS
+    },
+
+    {
+      title: "Aaron Koblin and Allison Parrish",
+      creation_flexdate: "2016-10-24",
+      collection_name: 'Essays',
+      collection_position: 2,
+      primary_thumbnail_path: "koblin-and-parrish/koblin-and-parrish.png",
+      primary_image_path: "koblin-and-parrish/koblin-and-parrish.pdf",
+      process: 'Essay',
+      artist_statement: <<-EOS
+        <p>This essay was written for coursework in Emerging Media and Digital Arts.</p>
+      EOS
+    },
+
+    {
+      title: "Eyeo Festival 2014: A Look at Selected Data Visualization Presentations",
+      creation_flexdate: "2016-11",
+      collection_name: 'Essays',
+      collection_position: 3,
+      primary_thumbnail_path: "eyeo-fest-paper/eyeo-fest-paper.png",
+      primary_image_path: "eyeo-fest-paper/Eyeo-Festival-2014.pdf",
+      process: 'Essay',
+      artist_statement: <<-EOS
+        <p>This essay was written for coursework in Emerging Media and Digital Arts.</p>
+      EOS
+    },
+
+    {
       title: "The Golden Solid",
       creation_flexdate: "2015-10",
       medium: "Sculpture",
@@ -115,9 +195,9 @@ class WorkSeeds
       materials: 'vinyl, taskboard, transfer paper',
       process: "Digitally controlled vinyl cut",
       artist_statement: <<-EOS
-        <p>Shepard Fairey is a contemporary artist and graphic designer who famously injected himself into the public consciousness by giving away and otherwise distributing enormous quantities of his work. His Andre the Giant Has a Posse was exceptional for, arguably, creating a new type of what Walter Benjamin called “aura” by eschewing monetary value in exchange for the cultural currency of association with hip hop and skater subcultures. In 1994, under the threat of lawsuit, Fairey created a stylized version of Andre’s face, removed his trademarked name, and added the ominous text “OBEY” as an antiauthoritarian response. In 2008, mass production of Fairey’s “HOPE” poster helped elect America’s first minority president.</p>
+        <p>Shepard Fairey is a contemporary artist and graphic designer who famously injected himself into the public consciousness by giving away and otherwise distributing enormous quantities of his work. His <em>Andre the Giant Has a Posse</em> was exceptional for, arguably, creating a new type of what Walter Benjamin called “aura” by eschewing monetary value in exchange for the cultural currency of association with hip hop and skater subcultures. In 1994, under the threat of lawsuit, Fairey created a stylized version of Andre’s face, removed his trademarked name, and added the ominous text “OBEY” as an antiauthoritarian response. In 2008, mass production of Fairey’s “HOPE” poster helped elect America’s first minority president.</p>
 
-        <p>Ocho Andres appropriates, replicates, and duplicates Fairey’s work and re-contextualizes the imagery as an exploration of the relationship between the artist and society. The piece walks the line between mass consumer popular culture and conceptual commentary, between creative work and shameless ripoff, and between message and ambiguity. The sarcastic “OBEY” on a red field has been replaced by the directive to “REPRODUCE” on a green field. Oppression is replaced by stern encouragement. Threat is replaced by a playful call to action. The piece intends to encourage us to embrace the possibilities of new tools in a new world of endless reproducibility.</p>
+        <p><em>Ocho Andres</em> appropriates, replicates, and duplicates Fairey’s work and re-contextualizes the imagery as an exploration of the relationship between the artist and society. The piece walks the line between mass consumer popular culture and conceptual commentary, between creative work and shameless ripoff, and between message and ambiguity. The sarcastic “OBEY” on a red field has been replaced by the directive to “REPRODUCE” on a green field. Oppression is replaced by stern encouragement. Threat is replaced by a playful call to action. The piece intends to encourage us to embrace the possibilities of new tools in a new world of endless reproducibility.</p>
       EOS
     },
     # {
@@ -172,6 +252,7 @@ class WorkSeeds
       title: "morning with birds",
       creation_flexdate: "2015-03-02",
       medium: "Music Improvisation",
+      primary_thumbnail_path: "morning-with-birds/morning-with-birds.png",
       media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206074384398210",
       collection_name: "Improvisations",
       collection_position: 1,
@@ -180,6 +261,7 @@ class WorkSeeds
       title: "relevé",
       creation_flexdate: "2015-03-03",
       medium: "Music Improvisation",
+      primary_thumbnail_path: "morning-with-birds/morning-with-birds.png",
       media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206090344397200",
       collection_name: "Improvisations",
       collection_position: 2,
@@ -188,6 +270,7 @@ class WorkSeeds
       title: "layin' low",
       creation_flexdate: "2015-03-04",
       medium: "Music Improvisation",
+      primary_thumbnail_path: "morning-with-birds/morning-with-birds.png",
       media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206092808578803",
       collection_name: "Improvisations",
       collection_position: 3,
@@ -196,6 +279,7 @@ class WorkSeeds
       title: "weak sauce",
       creation_flexdate: "2015-03-06",
       medium: "Music Improvisation",
+      primary_thumbnail_path: "morning-with-birds/morning-with-birds.png",
       media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206111080075579",
       collection_name: "Improvisations",
       collection_position: 4,
@@ -204,6 +288,7 @@ class WorkSeeds
       title: "cinco",
       creation_flexdate: "2015-03-06",
       medium: "Music Improvisation",
+      primary_thumbnail_path: "morning-with-birds/morning-with-birds.png",
       media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206113447454762",
       collection_name: "Improvisations",
       collection_position: 5,
@@ -212,6 +297,7 @@ class WorkSeeds
       title: "'saving' time",
       creation_flexdate: "2015-03-08",
       medium: "Music Improvisation",
+      primary_thumbnail_path: "morning-with-birds/morning-with-birds.png",
       media_url: "https://www.facebook.com/robert.head/videos/vb.1220115019/10206129494655932",
       collection_name: "Improvisations",
       collection_position: 6,
@@ -219,6 +305,7 @@ class WorkSeeds
     {
       title: "tiny universe",
       creation_flexdate: "2015-03-09",
+      primary_thumbnail_path: "morning-with-birds/morning-with-birds.png",
       medium: "Music Improvisation",
       media_url: "https://youtu.be/m_-WPCLnxyU",
       collection_name: "Improvisations",
@@ -228,6 +315,7 @@ class WorkSeeds
       title: "wood and rosin",
       creation_flexdate: "2012",
       medium: "Poetry",
+      primary_thumbnail_path: "wood-and-rosin/wood-and-rosin.png",
       text_content: <<-EOS
       how is it, stranger,
       that you came to know
@@ -272,6 +360,7 @@ class WorkSeeds
       title: "bells",
       creation_flexdate: "2015-12",
       medium: "Poetry",
+      primary_thumbnail_path: "bells/bells-thumbnail.png",
       text_content: <<-EOS
         Fog lifts, snow line falls
         Warm village in the valley

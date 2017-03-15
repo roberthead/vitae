@@ -15,8 +15,13 @@
         .date
           = work.creation_date_string
   - if work.primary_image_path.present?
-    .feature
-      = image_tag(image_path("works/#{work.primary_image_path.presence}"))
+    - if work.primary_image_path =~ /\.pdf$/
+      .big-thumbnail
+        = link_to image_url("works/#{work.primary_image_path}"), target: "_blank" do
+          = image_tag(image_path("works/#{work.primary_thumbnail_path.presence || 'placeholder.png'}"))
+    - else
+      .feature
+        = image_tag(image_path("works/#{work.primary_image_path.presence}"))
   - if work.media_url.present?
     = link_to work.media_url, work.media_url, target: "_blank"
   - if work.embed_code.present?
