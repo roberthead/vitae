@@ -11,7 +11,7 @@
     .attribution
       - if work.attribution.present?
         .name
-          = work.attribution_initials
+          = work.attribution
       - if work.creation_date_string.present?
         .date
           = work.creation_date_string(month: :short)
