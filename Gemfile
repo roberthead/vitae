@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.3.4'
 
 gem 'coffee-rails', '~> 4.1.0'
 gem 'haml'
@@ -19,7 +19,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'factory_girl_rails'
-  gem 'faker'
+  gem 'ffaker'
   gem 'shoulda-matchers'
 end
 

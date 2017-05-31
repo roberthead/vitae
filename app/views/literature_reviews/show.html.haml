@@ -1,115 +1,428 @@
 = render partial: 'shared/thesis_header'
 
-%h2#literature-review
-  Literature Review
+.literature-review
+  %h2 Review of Literature
 
-%h3#introduction Introduction
-%ul
-  %li
-    My research is about... computer-assisted music composition (CAC).
-    %ul
-      %li
-        18th century Baroque style counterpoint
-      %li
-        Computer analysis and compositional assistance
-  %li
-    Counterpoint
-    %ul
-      %li
-        18th Century and common practice counterpoint has been a well-established subject for almost 300 years.
-  %li
-    Software analysis
-    %ul
-      %li
-        Several teams have created software that analyzes adherence to certain styles of music and generates music suited to that style.
-  %li
-    Educational Technology
-    %ul
-      %li
-        A considerable body of research addresses how to apply musical technologies in a learning setting.
-  %li
-    Deficits in the literature
-    %ul
-      %li
-        Software research in music analysis is almost exclusively focused on strategies for generating new material algorithmically.
-      %li
-        This research will, instead, provide a tool that empowers human composers by dynamically illustrating the principles of counterpoint as they are generating material.
+  %h3 INTRODUCTION
 
-%h3#body Body
-%ul
-  %li
-    Counterpoint
-    %ul
-      %li
-        The seminal work in counterpoint, Johann Joseph Fux's Gradus ad Parnassum
-        %ul
-          %li
-            published in 1725
-          %li
-            established the 'species counterpoint' teaching methodology
-          %li
-            clearly defines the rules from which fitness metrics can be derived.
-      %li
-        Gioseffo Zarlino. The art of counterpoint : part three of Le istitutioni harmoniche, 1558
-      %li
-        Arnold Schoenberg's 'Preliminary Exercises in Counterpoint'
-        %ul
-          %li
-            Published 1963 by one of the greats of 20th century composition.
-      %li
-        Kent Kennan's Counterpoint is arguably the most well-regarded contemporary text on the subject.
-      %li
-        Counterpoint by Walter Piston
-      %li
-        Keyboard Music (Johann Sebastian Bach) (1970) will serve as a trustworthy edition of Bach's repertoire of contrapuntal music in action. His 15 two-part inventions will be used as a reference point for the quality of analysis.
-  %ul
-    Software analysis
-    %ul
-      %li
-        Herreman &amp; Sorensen
-        %ul
-          %li
-            A variable neighbourhood search algorithm to generate first species counterpoint musical scores (2011)
-          %li
-            Composing Fifth Species Counterpoint Music With Variable Neighborhood Searching (2012)
-            %ul
-              %li
-                Details their 38 fitness functions for scoring the adherence of a composition to 18th century contrapuntal guidelines.
-          %li
-            FuX, an Android app that generates counterpoint (2013)
-      %li
-        Springer, Fugue composition with counterpoint melody generation using genetic algorithms, 2004
-      %li
-        Shyamala Doraisamy. Locating recurring themes in musical sequences, 1995
+  %p
+    The subject of this research is computer-assisted music composition (CAC) in the style of Baroque counterpoint. This review of literature is a preface to and preparation for the development of a web application that assists in composition by providing real-time analysis and annotations of adherence to counterpoint guidelines.
 
-  %li
-    Pedagogy and Music technology
-    %ul
-      %li
-        Andrew Brown, Music Technology and Education: Amplifying Musicality, 2015
-      %li
-        David Cope, Hidden Structure: Music Analysis Using Computers, 2009
-      %li
-        Michael Cuthbert, Music21: A Toolkit for Computer-Aided Musicology, 2013
-      %li
-        Barrett. The musical experience : rethinking music teaching and learning, 2014
-      %li
-        Miller. Multimodal composing in classrooms : learning and teaching for the digital world, 2012
+  %p
+    Stochastic music, compositions partially or completely generated with processes external to human choice, has a long history, from Mozart's dice game in the 18th century to John Cage's “Atlas Eclipticalis” in which the composer drew staves over a star chart. With the emergence of computer software, however, the possibilities for automated or assisted music composition have grown exponentially. Researchers Lejaren Hiller and Leonard Isaacson published their algorithmic composition
+    %span.work-title Illiac Suite for String Quartet
+    in 1957 and algorithmic composition has not let up since.
 
-  %li
-    Related Codebases
-    %ul
-      %li
-        Music21 at MIT http://web.mit.edu/music21/
-      %li
-        Ruby gems
-        %ul
-          %li
-            https://github.com/aspiers/ruby-harmony
-          %li
-            https://github.com/beneggett/music_theory
-            %ul
-              %li
-                http://confreaks.tv/videos/mwrc2015-writing-music-with-ruby-a-subtle-introduction-to-music-theory
-          %li
-            https://github.com/chrisbratlien/rb-music-theory
+  %p
+    Counterpoint is a technique of music composition in which multiple voices (human or instrumental) possess significant rhythmic and melodic independence while being harmonically interdependent. The resultant polyphonic music is an interweaving of complementary melodic lines and stands in contrast to the more common homophonic music in which a single prominent melody is supported (usually) by chords.
+
+  %p
+    Counterpoint has been a well-established subject for over four hundred years. The early masterpiece of music theory,
+    %span.work-title Gradus ad Parnassum,
+    published in Latin by Johann Joseph Fux in 1725, served to generalize the study of the discipline by nearly every serious student of music composition.
+
+  %p
+    Fux’s seminal work established a system known as ‘species counterpoint’ or ‘strict counterpoint’ in which the student undertakes a series of five different exercises with progressive levels of complexity. His work described the 16th-century contrapuntal style of composers like Giovanni Pierluigi da Palestrina, whom he idolized. Nevertheless, since that time, authors and teachers have followed this pattern to instruct composers in the skills and techniques of both 16th-century (Renaissance) and 18th-century (Baroque) counterpoint, which are distinct styles with distinct customs and theoretical underpinnings.
+
+  %p
+    Examples of the contrapuntal compositions in the style of 18th-century counterpoint include the chorales, inventions, and fugues of composers such as J. S. Bach, G. F. Handel, and A. Vivaldi. The techniques of 18th-century counterpoint, however, are foundational to the Western common practice period, roughly 1650 to 1900, in which music was composed from a distinctly tonal point of view. Prior to the 18th-century, music composition was based on the seven modes of Renaissance church music. The common practice era emerged when modal music was replaced by tonal music which is characterized by major and minor keys and chord progressions.
+
+  %p
+    While the hegemony of the common practice period ended with the emergence of atonality around 1900, counterpoint remains highly relevant to contemporary music composition. Accordingly, the subject continues to be widely taught and studied to the present day. The continued high interest in counterpoint lends to this research its academic, theoretical, and practical value. This review will examine many of the common texts from which the subject is taught, both for their value in understanding the domain to be modeled and for their value in defining rule sets that can be encoded in software.
+
+  %p
+    The application of software to the challenges of composing music has been of interest since the conception of the computer itself. Ada Lovelace, widely acknowledged as the first computer programmer, expressed the possible application of computers to this task. “[The Analytical Engine’s] operating mechanism might act upon other things besides numbers [...] Supposing, for instance, that the fundamental relations of pitched sounds in the signs of harmony and of musical composition were susceptible of such expressions and adaptations, the engine might compose elaborate and scientific pieces of music of any degree of complexity or extent.” (Herremans &amp; Sörensen 2)
+
+  %p
+    The fulfillment of her dream of computer-assisted music composition emerged side-by-side with the development of digital computing as early as the 1950s. By the 1980s, with the emergence of MIDI and digital synthesizers affordable to the general public, computers have become central to the composition, production, and recording of all styles of music. Throughout this revolutionary technological sea change, computer-aided algorithmic composition (CAAC) has emerged as an alternative to music composed entirely by the unassisted human mind. With CAAC, music is composed either entirely or partially using computer software algorithms. Numerous researchers, composers, songwriters, and tinkerers have applied algorithmic composition to many different styles of music.
+
+  %p
+    Because of the systematic way in which 16th-century and 18th-century counterpoint has been described in the literature, several teams have undertaken the task of generating original contrapuntal music with the aid of computer software algorithms. These teams have blazed a trail that will prove useful in developing algorithms that accurately measure the adherence of music to the style of 18th-century Baroque counterpoint.
+
+  %p
+    While numerous projects and research teams have explored computer-generated music, several deficits exist. First, there is a scarcity of projects designed to assist rather than replace the human composer. Software research in music analysis is almost exclusively focused on strategies for generating new material algorithmically. In contrast, this research will provide, as its end goal, tools that illuminate the principles of counterpoint in real time as the composer is working. Rather than replace composers, the software will empower them. Second, most of the research into counterpoint analysis and algorithmic composition is built on a greatly simplified foundation unable to grow beyond its rigid task. This project will build counterpoint analysis tools on top of HeadMusic–an open-source music theory library in the Ruby programming language. While Ruby is a general purpose language heavily used in web development applications, no such library was previously available. HeadMusic, as a solid music theory foundation, will make it possible to address a variety of styles and possible applications in the future.
+
+  %p
+    In totality, this literature review will serve to provide a sufficient understanding of counterpoint and the state of the art in computer-aided composition to support the development of software-based counterpoint tools that provide real-time annotated analysis.
+
+  %h3 THE LITERATURE
+
+  %p
+    Because this research exists at the intersection of a traditional art form and present day software technology, the review of the applicable literature falls into two broad categories—counterpoint and software-aided composition. Each of these topics has several dimensions.
+
+  %p
+    For counterpoint, the literature is divided between historical treatises, present day instructional texts, and the musical compositions representative of 16th-century and 18th-century styles. Because ‘literature’ is an overloaded term in this context, the term ‘musical literature’ will be used whenever the term refers to musical compositions and ‘literature’ will refer to textual and written language sources.
+
+  %p
+    The software literature under review includes experiments with music generation, interface, notation, and user experience innovations, pedagogical explorations, and codebases that encode music theory rudiments and analysis.
+
+  %h4 Counterpoint - historical foundations.
+
+  %p
+    The earliest treatise on counterpoint that remains relevant to the present day is Gioseffo Zarlino’s
+    %span.work-title Le Istitutioni harmoniche,
+    published in 1558, which introduced counterpoint scholarship to much of Europe. Part three of the book is titled “The Art of Counterpoint” and has been translated into English. To a present-day scholar, this text illuminates the theoretical models understood by composers during the golden age of vocal polyphony. The text includes early discussion on the subtleties of consonance and dissonance that continue to inform the art of counterpoint today. A chapter is devoted, for example, to the delegation of the perfect fourth to the category of dissonance in two-part counterpoint.
+
+  %p
+    Counterpoint came to fruition as a well-defined discipline for study with the publication of the seminal text,
+    %span.work-title Gradus ad Parnassum,
+    by Johann Joseph Fux in 1725. Johann Joseph Fux (1660 – 1741) was a composer and music theorist whose work straddled the High Renaissance and Baroque periods. Fux’s compositions have fallen out of the musical literature and are seldom heard performed in our modern world, despite his considerable fame with the people and royalty of his day. Nevertheless, his book is an enduring work and makes him the most widely studied music theorist in history.
+
+  %p
+    As the masterpiece of counterpoint instruction,
+    %span.work-title Gradus ad Parnassum
+    was studied by Bach, Mozart, Haydn, Beethoven and many, if not most, other composers since its original publication. In some cases, the notebooks of these composers have survived including their solutions to the exercises in Fux’s treatise. Indeed, Beethoven worked through its exercises as a student of Haydn, which strained their relationship—young Beethoven was disgusted with Haydn’s inattention to detail (Swafford 148-51).
+
+  %p
+    Fux wrote his treatise in Latin, which was at that time a common auxiliary language because of its use in liturgical services. In doing so, he attempted to be of greatest service to the largest audience rather than to impress the reader with his writing skills. This gamble paid off in the widespread acceptance of his pedagogical strategy.
+
+  %p
+    %span.work-title Gradus ad Parnassum
+    is divided into three sections. The first section is lecture style and discusses the rudiments of music theory, including intervals, contrapuntal motion, and consonance. Fux also explores frequency ratios and tuning alternatively by math and by ear. Several of the basic rules of counterpoint are presented in its conclusion, which is the only portion of the first section included in the English translation (Mann 20-2).
+
+  %p
+    The second section of
+    %span.work-title Gradus ad Parnassum
+    earned the book its fame. The content is written as a narrative, tutorial conversation between Josephus, representing the student (or Fux himself), and Aloysius, who represents the Renaissance counterpoint master Palestrina. The tone is disarming, delightful, and expresses a healthy relationship between an encouraging, patient master and a diligent, passionate student. Fux’s enthusiasm for both the subject matter and healthy pedagogical practices are visible throughout the text. The reader feels that the author was not only a clear-headed master of his craft, but also a genuinely kind soul with a spirit of compassionate service. This devotion to craft and humility of spirit is reflected in both his choice of language and his tone. For example, after sharing a fictional example in which the student in the narrative violated a rule not yet presented, he writes, “Don’t worry, my son, the first mistake did not happen through any fault of yours, since you did not know the rule that the counterpoint must be in the same mode as the cantus firmus.” (Fux, 31) He then goes on to articulate the next lesson.
+
+  %p
+    Within this semi-Socratic dialogue, Fux articulates the five species of strict counterpoint. For all species, the starting point is a short simple melody he calls the ‘cantus firmus’ or ‘fixed song’. These melodies are extremely simple—eight to thirteen notes, all of the same duration. In each exercise, Fux, through his Aloysius character, provides a cantus firmus against which counterpoint will be written.
+
+  %p
+    Because the cantus firmi are derived from church chorales of the High Renaissance period, the melodies are modal rather than tonal. While they have no key signature and no accidentals, they may start on any of the seven ‘white key’, or natural, notes. Tonal music, from the Baroque onward, is usually either major or minor, which are key types that correspond to just two of the seven modes.
+
+  %p
+    The chapters for each of the five species of counterpoint are designed to build the student’s knowledge cumulatively. Even within a chapter for a given species, the rules are presented to the student one or two at a time as the exercises develop. The reader is encouraged to build their skills by mastering each in sequence. This systematic approach is indeed the origin of the book’s title which translates to “Steps to Parnassus”. Parnassus is a mountain in Greece that in ancient times was sacred to Dionysus, Apollo, and the Muses. The implication is clearly that, if you take his step-by-step approach, you can achieve musical enlightenment!
+
+  %p
+    Fux’s text is essential because it is the original primary document that systematically defines the rules of strict counterpoint. For example, the first species of strict counterpoint requires the student to write a counterpoint melody against the cantus firmus note-to-note. If the cantus firmus is in whole notes, which is the standard convention, so is the counterpoint. The counterpoint notes must be consonant with the cantus. The melody should, more often than not, move in the opposite direction of the cantus. The counterpoint line must start and end on a perfect consonance and in the same mode, but imperfect consonances (thirds and sixths) should outnumber perfect consonances (perfect fifths, octaves, and unisons) in between. The rules go on progressively adding more guidance.
+
+  %p
+    As he builds the rule set for additional species, the student begins to understand that the first species rules generally still apply in later species, but apply specifically to the downbeat. In such a way, he builds all of the elements that eventually comprise the florid, or fifth species, style. By the close of this section, each species of counterpoint (one-to-one, two-to-one, four-to-one, suspensions, and florid) has been explored.
+
+  %p
+    Through these chapters, the basic rules of strict counterpoint are well established and expressed with sufficient clarity to be codified in software analysis tools. An appendix to this review of literature lists rules extracted directly from Fux’s treatise.
+
+  %h4 Counterpoint - present-day instruction.
+
+  %p
+    Subsequent works on counterpoint are built on the foundation laid by Fux. Twentieth-century composers Arnold Schoenberg, Kent Kennan, and Walter Piston each contributed a well-received text from which they and others taught classes on the subject of traditional counterpoint. Of these, Schoenberg’s text follows Fux’s five species but expresses the concepts from a modern perspective of tonal harmony. The others guide the student to understand counterpoint as it was practiced in the 18th-century style, masterfully exemplified in the choral and keyboard works of J. S. Bach.
+
+  %p
+    %span.work-title Preliminary Exercises in Counterpoint
+    was written by composer, writer, and painter Arnold Schoenberg, best known for early twentieth-century compositions based on his ‘twelve-tone technique’ innovations. Harmonically, this text is strict and traditionalist, sticking to the common practice period conventions and insisting on authentic cadences (xiv), for example. (An 'authentic cadence' is the satisfying pattern of closing a section or piece of music with a dominant (V or V7) chord followed by the tonic (I or i), both in root position.) As the leading purveyor of atonalism, Schoenberg’s focus on tonal counterpoint may seem anachronistic and counterintuitive. On the contrary, his emphasis on strict counterpoint re-asserts the value of these techniques as the solid foundation over which other constructs may be built. Atonal music, jazz, and other modern styles derive much of their power from the specifics of how they depart from the tonal rules of traditional counterpoint and would not be historically sensible without them. Schoenberg explained his intentions: “To train the mind of the student, to give him possession of this sense of form and balance and of an understanding of musical logic–that is the main purpose of this present study.” (Rufer 136)
+
+  %p
+    Schoenberg described his method of teaching counterpoint as ‘proceeding systematically’ (Schoenberg xi). When writing a particular species of counterpoint against a cantus firmus, he would explore every possible solution, measure by measure. In this way, the student would often hit dead ends, but also become aware of creative avenues that might otherwise lay undiscovered. While the text explores the same strict counterpoint species as Fux, the subject is treated with great thoroughness and with a high value placed on discussion, criticism, and application.
+
+  %p
+    In contrast to Fux, Schoenberg presents nearly all of his examples in major and minor keys rather than in the medieval modes. In minor specifically, he contributes new terms such as ‘neutralization’ and explicitly describes counterpoint in terms of modulation and tonal function rather than as a list of note-to-note rules. In this way, he explores the same topics as Fux with the assumption that the reader possesses the mental models of a modern tonal musician rather than the less flexible mindset of a Renaissance contrapuntal church musician.
+
+  %p
+    Schoenberg’s text is organized into three sections. The first deals with simple counterpoint in two voices, first in major keys and then in minor. The second section explores counterpoint in three voices. And the third and final section explores counterpoint in four voices. Within each section, chapters are provided for each of the five species, followed by chapters in which he explores the compositional application of the preceding techniques.
+
+  %p
+    The value of Schoenberg’s work lies is two points. First, he applies an intellectual rigor that follows each exercise to many if not all of its possible conclusions. In doing so, he extrapolates additional techniques and coins new terms to address challenges and phenomena that arise when attempting to solve the puzzle of a particular counterpoint exercise. Second, he applies a twentieth-century mentality. Musicians that preceded the classical period (1750-1820) did not reason about music using the same set of mental constructions. For example, figured bass notation suggests that Baroque musicians built their harmonies in relation to the bass line (e.g., G5-3, G6-4, D7, G5-3), where a modern musician thinks in chord progressions (e.g., G, C/5, D7, G or I, IV/5, V7, I). Similarly, a Baroque improviser or composer thought in melodic lines, whereas most modern improvisers think in terms of a framework of harmonic chord progressions and the melodic lines are woven into that latticework. A medieval or Renaissance musician played in modes with a different conception of harmonic movement, while a common practice or modern musician thinks almost exclusively in major or minor keys and uses accidentals to aid in voice leading. In response to these changes in musical practice, Schoenberg presented his material from a modern set of mental constructions and asserts the rules of counterpoint from the perspective of how they serve tonal harmony. In this way, he presents counterpoint not as a historical practice, but as a living craft relevant to contemporary compositions.
+
+  %p
+    In contrast to Schoenberg’s contribution, Piston and Kennan wrote well-received counterpoint texts focused on the application and practice of counterpoint specifically in the 18th-century style. These texts depart from the academic study of counterpoint species, which is most applicable to Renaissance and church-focused vocal music. Instead, they discuss the more complex, less restrictive use of free counterpoint in the era of Antonio Vivaldi and J. S. Bach.
+
+  %p
+    Walter Piston was a well-known twentieth-century composer who twice won the Pulitzer Prize for Music and taught for many years at Harvard University. His book, titled simply
+    %span.work-title Counterpoint,
+    sets aside the step-by-step approach of strict counterpoint and instead examines the elements of counterpoint required to build a substantial composition in the 18th-century style. Melodic curve and melodic rhythm are addressed as fundamentals of contrapuntal lines. After all, counterpoint can hardly be satisfying unless the independent lines from which it is composed are well-constructed individually. The text then addresses harmony, both structurally, and in terms of harmonic rhythm. In this fashion, he works his way through motivic transformations, invertible counterpoint, canon, and other higher-order concepts.
+
+  %p
+    The great value of Piston’s work is that he teaches past the species counterpoint ‘rules’ to the larger question of composing a work that has a structure, motives, variations, and a beginning, middle, and end. His guidance can be applied beyond individual notes and measures to larger structures. In applying his methods, fitness functions in this project’s software could be articulated that address the tasteful use of repetition, harmonic rhythm, transformation, inner cadences, and balance within the full work. Piston’s
+    %span.work-title Counterpoint
+    also serves to articulate the elements of counterpoint that are specific to the 18th-century style, as this work deliberately ignores stylistic elements specific to the 16th-century repertoire.
+
+  %p
+    A third twentieth-century composer-instructor, Kent Kennan, wrote another seminal text on the subject of counterpoint.
+    %span.work-title Counterpoint: Based on Eighteenth-Century Practice,
+    first published in 1959 and methodically revised through a 4th edition in 1999, is arguably the most well-regarded contemporary text on the subject and is widely used in music schools and universities to the present day.
+
+  %p
+    Although Kennan was an established composer in his early professional life and his Sonata for Trumpet and Piano is in the trumpet studio repertoire at many schools, he abandoned composition in his forties to focus on university instruction. This text takes an approach similar to the Piston work. His focus is not on ‘strict counterpoint’, but rather on the ‘free counterpoint’ of the 18th-century style, which he rightly points out has remained relevant and endured for three centuries.
+
+  %p
+    The strengths of Kennan’s text are in his focus on the style of the Baroque and on his thorough treatment of contrapuntal forms. He builds the reader’s understanding methodically starting with the principles of individual melodic lines. He then provides principles of two-point counterpoint and harmonic intervals. His exercise sections are sometimes whole chapters unto themselves and are perhaps the most rich and complete of any commonly used text. Before moving on to increasing complexity, he devotes a chapter to composing a complete short work with two-part counterpoint. Only then does he move on to address other topics in similar fashion: canon, invertible counterpoint, motive development, three-part counterpoint, etc.
+
+  %p
+    The last six chapters of Kennan’s
+    %span.work-title Counterpoint
+    are devoted to the specifics of particular contrapuntal forms, with three entire chapters devoted entirely to the fugue. A student working through his book achieves not merely familiarity with counterpoint, but proficiency in the style and an ability to craft works in many forms (invention, trio sonata, fugue, chorale prelude, variations, fantasia, passacaglia, chaconne).
+
+  %p
+    For the purposes of this research, Kennan’s text is valuable for several reasons. First, it articulates the guidelines of counterpoint specific to the style of 18th-century Baroque counterpoint, such as the acceptable use of chromatic pitches. Second, it provides guidelines for numerous 18th-century forms, which opens the door to providing metrics for adherence to form in addition to style. Finally, this text provides the richest trove of both adherent and nonadherent examples which can be used as source material for validating software fitness functions.
+
+  %p
+    Additional twentieth-century texts on counterpoint have also proven quite valuable for the purposes of this research. Authored by Ferdinand Davis and Donald Lybbert, then professors of music at Hunter College at the City University of New York,
+    %span.work-title The Essentials of Counterpoint
+    is notable for the systematic way in which the rules and guidelines of strict counterpoint are spelled out for the student.
+
+  %p
+    Part one of the text covers the rules of strict counterpoint, following the precedent of J. J. Fux in presenting exercises in systematic fashion as five species of exercises. This first section of the book first codifies all the general rules in terms of range, harmony, melodic and harmonic movement. The remainder of part one covers, quite systematically, each of the traditional species, first through fifth. The book devotes a chapter for each species in two-part counterpoint. It then follows with a chapter for each in three-part harmony and again in four-part harmony. The intention is to prepare the student for higher-level concepts that integrate these skills.
+
+  %p
+    Part two is comparatively brief, consisting of a single large chapter covering the challenges of invertible counterpoint, wherein the voices can be raised or lowered an octave and switch positions without destroying the harmonic content of the work. Part three covers canon and various imitative techniques, such as imitation in contrary motion, by retrograde motion, by augmentation, by diminution, and by rhythmic syncopation. The appendix helpfully provides five major and five minor cantus firmi, provided in the bass clef, that can be used in exercises.
+
+  %p
+    Oddly, Davis and Lybbert make little attempt to explain terminology and use new terms of art without introduction. For example, the rules of third species allow neighboring tones and passing tones, but no attempt is made to explain that the very notion of these terms is derived from the exigencies of contrapuntal harmony. In other words, the text provides a set of rules, but little to nothing about why they exist or how the terms common to this field of study emerge from its challenges.
+
+  %p
+    The stated intention of
+    %span.work-title The Essentials of Counterpoint
+    is to lay the groundwork for the student to undertake what the authors call ‘scholastic fugue’, a term more common in the French music academie system. While the text asserts this purpose, there is no mention of fugal structure or techniques for composing fugues. A single page at the end of the section on canonic imitation merely asserts that the flexible application of imitation and various transformations are “a cornerstone in the foundation of musical composition.” (Davis and Lybbert 83) No mention is made of fugal style or structure beyond the nebulous notion that it consists of multi-part counterpoint.
+
+  %p
+    For my research, as it was for the work of Herremans and Sörensen, which will be explored later in this review of literature, the great value of
+    %span.work-title The Essentials of Counterpoint
+    lies in its methodical lists of rules and guidelines that are found throughout. Each species and each technique are presented as a set of instructions and these instructions are highly conducive to being codified in software. For this reason, this text, while less useful in a classroom setting, is a valuable reference for this research.
+
+  %h4 Counterpoint - the musical literature.
+
+  %p
+    Access to high-quality editions of the musical literature of the style is an essential component of this research. Theory and discourse must be complemented by canonical examples of contrapuntal compositions. Counterpoint is essentially informed by the possibilities and limitations of human singers performing in groups. The very notion of melodic lines is a characteristic of the human voice and many rules of contrapuntal technique are crafted around what is reasonably ‘singable’. As such, Renaissance and Baroque chorales are the purest examples of counterpoint in the musical literature. The contrapuntal choral works of Palestrina are well represented in the 1993 Dover edition of his
+    %span.work-title Masses and Motets.
+    For the chorales of J. S. Bach, Albert Riemenschneider’s collection, precisely if awkwardly titled
+    %span.work-title 371 Harmonized Chorales and 69 Chorale Melodies with Figured Bass,
+    is the gold standard.
+
+  %p
+    %span.work-title Johann Sebastian Bach Keyboard Music
+    (1970) will serve as a trustworthy edition of Bach's repertoire of contrapuntal instrumental music. Within these scores, the fifteen two-part inventions will be given special emphasis as reference points for the quality of analysis.
+
+  %h4 Computer-Aided Composition.
+
+  %p
+    Next to the music theory of counterpoint, the second broad category of literature relevant to this research is computer-aided composition. Automated composition goes back at least as far as Mozart's dice game in the 18th century. However, the advent of computing technology has opened many new doors. Several teams have explored generating contrapuntal music in 16th-century or 18th-century style. In a separate vein, researchers have explored alternative interfaces and behavior flows that enhance or help to democratize the ability to compose music.
+
+  %p
+    The field of generating music with digital computer technology, sometimes called Computer-Aided Algorithmic Composition (CAAC), has been underway for several decades. A number of projects have focused on counterpoint, perhaps drawn to it by the well-defined set of rules.
+
+  %p
+    In 2005, Andres Garay Acevedo presented “Fugue Composition with Counterpoint Melody Generation Using Genetic Algorithms” at the International Symposium on Computer Music Modeling and Retrieval in Esbjerg, Denmark. In this paper, Garay Acevedo presents a well-constrained problem: “Given an initial musical phrase, find a suitable counterpoint melody from the space of all possible melodies.” (5) In computer science terms, this problem belongs to a category of problems known as NP-complete, which indicates that the solutions to the problem are effectively infinite and no solution can be proven to be the optimal solution. Nevertheless, better and better solutions can be found using one of several strategies: search algorithms, stochastic models, or genetic algorithms. Garay Acevedo achieved satisfying results using genetic algorithms. Especially relevant to the present research is the demonstration that high-quality fitness evaluations can be encoded in software. The genetic algorithm strategy was used again by Nicholas Tollervey for his Foox project which he presented at the EuroPython 2012 conference.
+
+  %p
+    The team of Dorien Herremans and Kenneth Sörensen from the University of Antwerp Operations Research Group in Belgium have spent several years working on genetic algorithms for species counterpoint and have published a series of papers on the generation of new music. The first, “Composing first species counterpoint with a variable neighbourhood search algorithm” (2011) constrained the challenge to first species strict counterpoint in the Fux tradition. In this paper, Herremans and Sörensen describe Optimuse, their custom computer-aided composition (CAC) software using a variable neighborhood search algorithm to compose one-to-one cantus firmus and counterpoint melody lines.
+
+  %p
+    Herremans and Sörensen created a set of fitness evaluations derived from textbooks such as
+    %span.work-title The Essentials of Counterpoint
+    (Davis and Lybbert) and
+    %span.work-title Counterpoint in Composition: The Study of Voice Leading
+    (Salzer &amp; Schachter). They developed software that scores the adherence of melody lines to Fux's rules both horizontally (melodically) and vertically (harmonically in relationship to the cantus firmus).
+
+  %p
+    The authors then describe three metaheuristic categories that, given a cantus firmus, could be used to find a highly adherent counterpoint line: local search (e.g. VNS), constructive (e.g. ant colony), and population-based (e.g. genetic algorithms). Unlike Garay Acevedo, they chose variable neighborhood search. Their implementation generates semi-random music and then tweaks the melody line until the fitness is optimized according to the previously mentioned scoring metrics. This achieves a local maximum—the best option within the ‘neighborhood’ discoverable by the algorithm given small incremental changes to the original random melody. This candidate is then significantly altered in order to explore other neighborhoods with potentially higher-scoring local maxima. The end result is that a high scoring result (according to their fitness metrics) is selected as the counterpoint line.
+
+  %p
+    In 2012, Herremans and Sörensen published the follow-up “Composing fifth species counterpoint music with variable neighbourhood search”. In this paper, they describe the expansion of their experiments with Optimuse algorithms to compose florid (fifth species) counterpoint. The paper again describes genetic, constructive, and local search algorithms and the implementation of variable neighborhood search (VNS) to generate quality counterpoint in florid style.
+
+  %p
+    Of great interest to this project, Herremans and Sörensen published a list of the criteria used for their fitness function. Their algorithm scores each candidate on nineteen horizontal (melodic) elements and nineteen vertical (harmonic) elements. Each subscore is from 0 to 1 and the subscores are summed for the overall fitness measure. Each of these functions is defined mathematically in their codebase. While the code itself is not published, their list of 38 criteria serves as a starting point for the development of rule sets and fitness functions that can be applied to real-time analysis in this project.
+
+  %p
+    Herremans and Sörensen integrated their Optimuse software into an Android mobile app and published another follow-up paper titled “FuX, an Android app that generates counterpoint”. This work has perhaps the most comprehensive examination of their methodology. This paper articulates two categories of fitness criteria. The soft rules of their algorithm are identical to those described in the previous paper. However, because their Android application needs to generate a continuous stream of music, processing time is constrained. To reduce the processing time necessary to find high-quality results, the application’s algorithm adds a set of hard, inviolable rules which immediately disqualify the candidate.
+
+  %p
+    The distinction between imperfect counterpoint and invalid counterpoint is of particular value to this research and to the development of real-time analysis tools. For example, an advanced user experience could be designed to restrict the user, whenever possible, to valid choices and then annotate the suboptimal choices.
+
+  %h4 Pedagogy and technology.
+
+  %p
+    For the purposes of developing real-time analysis tools, the question of how to present music and feedback to the composer—the user experience—is of central importance to the value of the tools developed. In past centuries, a composer wrote in traditional music notation or simplified lead sheets with pen and paper. The advent of computer software enables new possibilities, resulting in a Cambrian Explosion of new interfaces.
+
+  %p
+    Simon Holland’s 1989 dissertation, titled Artificial Intelligence, Education and Music: The Use of Artificial Intelligence to Encourage and Facilitate Music Composition by Novices, explores two approaches to teaching composition to musicians without a presumption of previous music training.
+
+  %p
+    Holland states the subjective goal of composition as "to compose something interesting" (Levitt). He asserts that traditional notation is unnecessarily opaque. Creativity is possible and can be achieved quicker with better tools and interfaces. To this end, he explores two approaches to teaching composition to untrained musicians. The first is music software called Harmony Space in which shapes and patterns are arranged to create a composition. The second is an intelligent tutoring system (ITS)—a knowledge system that tutors students. The value of his paper to the present research is to open the door to exploring democratizing and empowering interfaces that can provide flexible compositional possibilities while communicating richer information to a broader audience than traditional notational scores.
+
+  %p
+    Leah Kardos, in “How Music Technology Can Make Sound and Music Worlds Accessible to Student Composers”, also asserts that traditional notation is an unnecessary barrier to composition. She explores a variety of strategies through her case study of students without the ability to read traditional music notation.
+
+  %h4 Analysis of structure and form.
+
+  %p
+    Several researchers have explored techniques for analyzing the larger structure of musical compositions. David Cope, professor emeritus from the University of California, Santa Cruz has been a central figure in the field, publishing numerous articles and books from 1987 to as recently as 2012. His 2009 text Hidden Structure: Music Analysis Using Computers is of particular interest because it explores the analysis of music from the micro level of pitch sets, scales, and individual notes to the macro level of theme development and the larger form of musical compositions.
+
+  %p
+    An earlier dissertation by Shyamala Doraisamy entitled “Locating Recurring Themes in Musical Sequences” (1995) explores pattern recognition software strategies that can be used to, for example, identify the reappearances of a theme in a fugue, even when it is transposed or otherwise transformed through augmentation, diminution, inversion, or retrograde.
+
+  %h4 Code libraries for music theory.
+
+  %p
+    A number of code libraries have been developed that model the rudiments and components of music theory. These libraries can form the foundation for analysis or algorithmic composition projects.
+
+  %p
+    The most highly developed project is music21, a library written in the Python programming language by a team at MIT.  The authors describe music21 as “an object-oriented toolkit for analyzing, searching, and transforming music in symbolic (score-based) forms.” (Cuthbert 637) The codebase is open source and available at
+    = succeed "." do
+      %a{:href => "https://github.com/cuthbertLab/music21"} https://github.com/cuthbertLab/music21
+  %p
+    Another Python project, Foox, is notable because it was designed to demonstrate the possibility of generating species counterpoint using genetic algorithms. The codebase is open source and found at
+    = succeed "." do
+      %a{:href => "https://github.com/ntoll/foox"} https://github.com/ntoll/foox
+    = succeed "." do
+      %a{:href => "https://youtu.be/OTHggyZAot0"} https://youtu.be/OTHggyZAot0
+  %p
+    In the Ruby programming language, which has been selected for the present project, there are several libraries, known as Ruby gems, that address the topic of music theory. These include ruby-harmony (
+    %a{:href => "https://github.com/aspiers/ruby-harmony"}> https://github.com/aspiers/ruby-harmony
+    ), music_theory (
+    %a{:href => "https://github.com/beneggett/music_theory"}> https://github.com/beneggett/music_theory
+    ), and rb-music-theory (
+    %a{:href => "https://github.com/chrisbratlien/rb-music-theory"}> https://github.com/chrisbratlien/rb-music-theory
+    ). Of these, none is currently maintained and none is adequate to the tasks required by this research.
+
+  %p
+    Together these codebases provide reference points from which strategies for creating object-oriented models of the rudiments of music theory can be built. The author’s own Ruby gem, HeadMusic, available at
+    = succeed "," do
+      %a{:href => "https://github.com/roberthead/head_music"} https://github.com/roberthead/head_music
+
+  %h3 CONCLUSION
+
+  %p
+    This overview of relevant literature establishes both the solid foundation of counterpoint pedagogy and the state of the art in research into computer-aided composition.
+
+  %p
+    Counterpoint, as we study it today, was firmly established by Johann Joseph Fux with the publication of his
+    %span.work-title Gradus ad Parnassum
+    in 1725. The twentieth-century texts taught in contemporary classrooms are divided between those that teach 16th-century style in the tradition of Fux, albeit with a more modern tonal emphasis, and those that teach counterpoint in the 18th-century style of J. S. Bach. These texts together establish with clarity that the hard and soft rules of counterpoint can be articulated with a remarkable level of scholarly consensus, especially so for the earlier style. Additionally, sufficient expertise exists to guide possible future possible research into tools that holistically analyze the form and style of entire works.
+
+  %p
+    Perhaps as a result of the clarity of counterpoint scholarship, a remarkable number of software research projects have explored the 16th-century style described by Fux. Most of the articles published and public talks given on this topic, however, have focused on the objective of generating new musical material. This task, however, requires the establishment of fitness functions which encode the rules of species counterpoint, which is relevant to this project. While these rule sets provide a starting point for current research, they have several gaps. First, they vary widely in quality. Second, few are built upon the rich understanding of music theory possessed by a working composer. Finally, the theory encoded in the software is often simplified for the task and therefore unable to be reapplied as a general purpose music theory library.
+
+  %p
+    Approaching from the other direction, none of the general purpose music theory code libraries measure up to the task of supporting detailed and flexible analysis, particularly in the Ruby programming language. This project will fill that void.
+
+  %p
+    The field of music composition pedagogy can benefit from the application of technology to the guidance of students and composers. The opportunity is present to develop and deliver tools, from open source libraries to public web applications, that empower rather than replace the human composer.
+
+  %h3 WORKS CITED
+
+  .citation
+    Bach, Johann S, and Albert Riemenschneider.
+    %span.work-title
+      371 Harmonized Chorales and 69 Chorale Melodies with Figured Bass.
+    New York: G. Schirmer, 1941. Musical score.
+
+  .citation
+    Bach, Johann S.
+    %span.work-title
+      Keyboard Music.
+    New York: Dover Publications, Inc, 1970. Print.
+
+  .citation
+    Cope, David.
+    %span.work-title
+      Hidden Structure: Music Analysis Using Computers.
+    Madison, WI: A-R Editions, 2009. Print.
+
+  .citation
+    Cuthbert, Michael Scott and Christopher Ariza. "music21: A Toolkit for Computer-Aided Musicology and Symbolic Music Data." in J. Stephen Downie and Remco C. Veltkamp (Eds.). 11th International Society for Music Information Retrieval Conference (ISMIR 2010), August 9-13, 2010, Utrecht, Netherlands. pp. 637-642.
+
+  .citation
+    Davis, Ferdinand, and Donald Lybbert.
+    %span.work-title
+      The Essentials of Counterpoint.
+    2nd ed. Norman: U of Oklahoma, 1977. Print.
+
+  .citation
+    Fux, Johann Joseph,
+    %span.work-title
+      The Study of Counterpoint
+    , from
+    %span.work-title
+      Gradus ad Parnassum
+    (first published 1725), ed. and trans. Alfred Mann. New York: W. W. Norton &amp; Company, Inc., 1965.
+
+  .citation
+    Galante, Guiseppe.
+    %span.work-title
+      Kent Kennan: Sonata for Trumpet and Piano.
+    YouTube, Dec 14, 2014, youtu.be/bkeluCFYEWs
+
+  .citation
+    Garay Acevedo, A. "Fugue Composition with Counterpoint Melody Generation Using Genetic Algorithms." In: Wiil U.K. (eds) Computer Music Modeling and Retrieval. CMMR 2004. Lecture Notes in Computer Science, vol 3310. Berlin: Springer, 2005
+
+  .citation
+    Herremans, Dorien, and Kenneth Sörensen. "Composing First Species Counterpoint with a Variable Neighbourhood Search Algorithm." Journal of Mathematics and the Arts, vol. 6, no. 4, 2012, pp. 169–189.
+
+  .citation
+    Herremans, Dorien, and Kenneth Sörensen. “Composing Fifth Species Counterpoint Music with a Variable Neighborhood Search Algorithm.” Expert Systems with Applications, vol. 40, no. 16, 2013, pp. 6427–6437.
+
+  .citation
+    Herremans, Dorien, and Kenneth Sörensen, "FuX, an Android app that generates counterpoint," 2013 IEEE Symposium on Computational Intelligence for Creativity and Affective Computing (CICAC), Singapore, 2013, pp. 48-55.
+
+  .citation
+    Hiller, Lejaren, and Leonard Isaacson.
+    %span.work-title
+      Illiac Suite for String Quartet.
+    1956. youtu.be/n0njBFLQSk8
+
+  .citation
+    Holland, Simon. “Artificial Intelligence, Education and Music: The Use of Artificial Intelligence to Encourage and Facilitate Music Composition by Novices.” Jul 89
+
+  .citation
+    Kardos, Leah. “How Music Technology Can Make Sound and Music Worlds Accessible to Student Composers in Further Education Colleges.” British Journal of Music Education, vol. 29, no. 2, 2012, pp. 143–151.
+
+  .citation
+    Kennan, Kent.
+    %span.work-title
+      Counterpoint: Based on Eighteenth-Century Practice.
+    Upper Saddle River, NJ: Prentice Hall, 1999. Print.
+
+  .citation
+    Levitt, D. A.
+    %span.work-title
+      A Representation for Musical Dialects.
+    Ph.D. Thesis, Massachusetts Institute of Technology, 1985. Print.
+
+  .citation
+    Palestrina, Giovanni P., and Raffaele Casimiri.
+    %span.work-title
+      Masses and Motets.
+    New York: Dover, 1993. Print.
+
+  .citation
+    Piston, Walter.
+    %span.work-title
+      Counterpoint.
+    New York: W.W. Norton &amp; Co, 1947. Print.
+
+  .citation
+    Rufer, Josef.
+    %span.work-title
+      The Works of Arnold Schoenberg.
+    London: Faber and Faber, 1962. Print.
+
+  .citation
+    Salzer, Felix, and Carl Schachter.
+    %span.work-title
+      Counterpoint in Composition: The Study of Voice Leading.
+    New York: Columbia University Press, 1989. Print.
+
+  .citation
+    Schoenberg, Arnold.
+    %span.work-title
+      Preliminary Exercises in Counterpoint.
+    London: Faber and Faber, 1963. Print.
+
+  .citation
+    Swafford, Jan.
+    %span.work-title
+      Beethoven: Anguish and Triumph: a Biography.
+    Boston: Houghton Mifflin Harcourt, 2014. Print.
+
+  .citation
+    Tollervey, Nicholas. "Music Theory - Genetic Algorithms and Python." YouTube, Jul 5, 2012, youtu.be/OTHggyZAot0
+
+  .citation
+    Wikipedia contributors. "Kent Kennan." Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 11 May. 2017. Web. 30 May. 2017.
+
+  .citation
+    Zarlino, Gioseffo.
+    %span.work-title
+      The Art of Counterpoint: Part Three of Le Istitutioni Harmoniche.
+    1558. New York: Norton, 1976. Print.
