@@ -5,6 +5,94 @@ class WorkSeeds
 
   WORKS = [
     {
+      title: "Juxtacompose",
+      creation_flexdate: "2017-Spring",
+      collection_name: 'Music Software',
+      collection_position: 1,
+      primary_image_path: "juxtacompose/juxtacompose.png",
+      primary_thumbnail_path: "juxtacompose/juxtacompose-thumb.png",
+      process: 'coding',
+      artist_statement: <<-EOS
+        <p>Juxtacompose represents an early draft of work toward my thesis project. In the 'sandbox' of this application, the user can compose a cantus firmus and a counterpoint line and receive real-time feedback provided by the HeadMusic code library.</p>
+
+      <p><a href="http://juxtacompose.herokuapp.com" target="_blank">http://juxtacompose.herokuapp.com</a></p>
+      EOS
+    },
+
+    {
+      title: "Zoo Planet",
+      creation_flexdate: "2017-Spring",
+      collection_name: 'Games',
+      collection_position: 1,
+      primary_image_path: "zoo-planet/zoo-planet.png",
+      primary_thumbnail_path: "zoo-planet/zoo-planet-thumb.png",
+      process: 'game design',
+      artist_statement: <<-EOS
+        <p>Zoo Planet is an original game design in the collectible card game genre. The original design was revived and encoded into a digital card-making tool during classwork for COMM 560.</p>
+      EOS
+    },
+
+    {
+      title: "L o s t",
+      creation_flexdate: "2017-Spring",
+      collection_name: 'Games',
+      collection_position: 2,
+      primary_image_path: "lost/lost.png",
+      primary_thumbnail_path: "lost/lost-thumb.png",
+      process: 'twine and coding',
+      artist_statement: <<-EOS
+        <p>"L o s t" is a miniature text-adventure game written with the Twine game engine written for COMM 560. The customizations of the default text features of twine include custom CSS styling and the addition of scrolling panoramic images.</p>
+
+        <p><a href="http://www.philome.la/roberthead/l-o-s-t" target="_blank">http://www.philome.la/roberthead/l-o-s-t</a></p>
+      EOS
+    },
+
+    {
+      title: "One World Midwives",
+      creation_flexdate: "2017-Winter",
+      collection_name: 'Web design',
+      collection_position: 1,
+      primary_thumbnail_path: "one-world-midwives/one-world-midwives.png",
+      media_url: "http://www.oneworldmidwives.org/",
+      process: 'twine and coding',
+      artist_statement: <<-EOS
+        <p>One World Midwives is a web site that I conceived, designed, and developed soup-to-nuts, for the Responsive Web Design coursework.</p>
+
+        <p><a href="http://www.oneworldmidwives.org/" target="_blank">http://www.oneworldmidwives.org/</a></p>
+      EOS
+    },
+
+    {
+      title: "HeadMusic",
+      creation_flexdate: "2017-Winter",
+      collection_name: 'Music Software',
+      collection_position: 2,
+      primary_image_path: "head_music/head-music-contributions-thumb.png",
+      primary_thumbnail_path: "head_music/head-music-contributions.png",
+      process: 'coding',
+      artist_statement: <<-EOS
+        <p>HeadMusic is an encoding of the rudaments and analysis elements of music theory into a library in the Ruby programming language.</p>
+
+      <p><a href="https://github.com/roberthead/head_music" target="_blank">https://github.com/roberthead/head_music</a></p>
+      EOS
+    },
+
+    {
+      title: "Composers",
+      creation_flexdate: "2016-11",
+      collection_name: 'Art of Data',
+      collection_position: 1,
+      primary_image_path: "composers/composers.png",
+      primary_thumbnail_path: "composers/composers-thumb.png",
+      process: 'coding',
+      artist_statement: <<-EOS
+        <p>Composers was developed by pulling data out of Wikipedia and other online sources to create a timeline of significant composers.</p>
+
+      <p><a href="http://composers-api.herokuapp.com" target="_blank">http://composers-api.herokuapp.com</a></p>
+      EOS
+    },
+
+    {
       title: "Invention in G Major",
       creation_flexdate: "2016-11",
       collection_name: 'Music Compositions',
@@ -19,14 +107,14 @@ class WorkSeeds
       creation_flexdate: "2016-11",
       medium: "Web art",
       collection_name: "Art of Data",
-      collection_position: 1,
+      collection_position: 2,
       primary_image_path: "spirographique/spirographique.png",
       primary_thumbnail_path: "spirographique/spirographique-thumb.png",
       media_url: "http://codepen.io/roberthead/full/kkVZKL",
       materials: 'HTML, CSS, Javascript',
       process: "coding",
       artist_statement: <<-EOS
-        <p>This process drawing, <em>Spirographique</em>, is a simulation of a Spirograph (<a href="https://en.wikipedia.org/wiki/Spirograph" target="_blank">https://en.wikipedia.org/wiki/Spirograph</a>), a popular toy that creates geometrical designs. My drawing process closely matches the physical characteristics of the meat-space version. An outer ring, as large as the canvas allows, provides the framework within which a smaller ring rolls around the circumference. The smaller ring has a random size and a pen hole a random distance from the center. The random ratio of the inner to outer rings and the position of the pen hole creates geometric relationships that result in a design. Unlike a real Spirograph, I was able to draw with a pen that cycles through the color spectrum at a velocity selected at random. Similarly, the stroke weight of the pen is selected randomly within a small and reasonable range.
+        <p>This process drawing, <em>Spirographique</em>, is a simulation of a Spirograph (<a href="https://en.wikipedia.org/wiki/Spirograph" target="_blank">https://en.wikipedia.org/wiki/Spirograph</a>), a popular toy that creates geometrical designs. My drawing process closely matches the physical characteristics of the meat-space version. An outer ring, as large as the canvas allows, provides the framework within which a smaller ring rolls around the circumference. The smaller ring has a random size and a pen hole a random distance from the center. The random ratio of the inner to outer rings and the position of the pen hole creates geometric relationships that result in a design. Unlike a real Spirograph, I was able to draw with a pen that cycles through the color spectrum at a velocity selected at random. Similarly, the stroke weight of the pen is selected randomly within a small and reasonable range.</p>
 
       <p><a href="http://codepen.io/roberthead/full/kkVZKL/" target="_blank">http://codepen.io/roberthead/full/kkVZKL/</a></p>
 
