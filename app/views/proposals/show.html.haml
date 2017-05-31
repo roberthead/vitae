@@ -1,0 +1,93 @@
+%h2 Developing scoring functions for music compositions in the style of eighteenth-century Baroque counterpoint.
+
+%h4 Robert Head, Spring 2017
+
+%h3 Background and rationale
+
+%p
+  I am developing a Web-based guide for music composition in the style of eighteenth-century Baroque counterpoint. When complete this tool will provide real-time analysis of music entered, point out trouble spots where stylistic conventions are being broken, and generate a numerical score that reflects the adherence of the music to well-defined rules of quality according to the style.
+
+%p
+  The effectiveness of this tool depends heavily upon the usefulness and accuracy of the criteria used to assess the music. The criteria for this style are well defined. Examples of criteria include:
+
+%ul
+  %li
+    the music should start and end on the tonic
+  %li
+    harmonic intervals falling on strong beats should be consonant
+  %li
+    melodic skips should be followed by a step in the opposite direction
+
+%p
+  The purpose of this preliminary study is to develop useful rulesets in software which will be used to evaluate music’s adherence to the style. A ruleset will be a collection of individual rules which each express a guideline such as the examples above.
+
+%p
+  These rulesets are built upon a foundation of software that expresses the rudiments of music theory. Rudiments include elements such as notes, scales, keys, intervals, chords, rhythm and meter.
+
+%p
+  The quality and efficacy of the rulesets developed will be improved through the iterative comparison of results arrived at for masterworks of the style and works selected for their imperfections.
+
+%h3 Research Questions
+
+%h4 Primary
+
+%p
+  How can software-based musical analysis tools be developed to assist in the composition of notated music in the style of eighteenth-century Baroque counterpoint?
+
+%h4 Secondary
+
+%p
+  How can rulesets for a given musical style, such as eighteenth-century Baroque counterpoint, be codified in software to assess the level of adherence of musical material to the guidelines of that style?
+
+%p
+  Which combination of rulesets creates the largest score separation between recognized masterpieces of the style and works selected as flawed by subject experts?
+
+%h3 Aims and Objectives
+
+%p
+  My objective is to develop and codify rulesets, or criteria, by which a contrapuntal music composition can be analyzed, assessed, and numerically scored.
+
+%p
+  The assessment should, if successful, correspond closely with assessments of human experts. Period music judged as masterworks or characteristic of the style should score well. Music judged as poor by music professors should score poorly.
+
+%p
+  In research design terms, the objective is to identify the strength of independent variables that correlate with the dependent variable – the assessed quality.
+
+%h4 Subject selection
+
+%p
+  The 'subjects' of this study are musical works selected and placed into two groups.
+
+%p
+  The first group will consist of masterworks of Baroque counterpoint, such as the inventions of J. S. Bach. The selection of these works will be made from the collective wisdom of centuries of scholarship as expressed in the literature, guided by consultation with music professors from SOU and other institutions.
+
+%p
+  The second group will be flawed works of 'objectively' lower quality – works that break the conventions of the style. These works will be selected by music professors who will specify the flaws they have identified in the works.
+
+%p
+  For this study, I will aim for approximately twenty samples in each group.
+
+%h3 Study Design and Methods
+
+%p
+  This study is a correlational survey.
+
+%p
+  The dependent variable is the ‘quality score' of the works – the measurable adherence of the music to the rules and guidelines of the style. Many of the conventions of Baroque counterpoint are well established and articulated in the literature. I will codify these guidelines into algorithms written in the ruby programming language.
+
+%p
+  The two groups under study are sets of musical works. The first group will consist of masterworks that are emblematic of the style. The second group is a set of flawed works, as assessed by music professors.
+
+%p
+  In the first phase of the study, the conventions of the style will be encoded. Our initial hypothesis is that the scoring functions should evaluate the first group as objectively higher scoring than the latter group.
+
+%p
+  The quality of the assessment itself, however, can be optimized. Not all rules are created equal and some mistakes are more egregious than others. Consequently, the details and relative weight of the individual rules in the ruleset will significantly impact the overall score.
+
+%p
+  In the second phase of the study, I will iteratively evaluate the accuracy and relative importance of each rule in the ruleset. I intend to explore genetic algorithms, such as variable neighborhood search, that can find the optimal weight of each rule within the ruleset. The objective of this process is to maximize the separation in score between the masterpiece group and the flawed group.
+
+%h3 Institutional Review Board
+
+%p
+  This project has been approved as exempt by the Institutional Review Board at Southern Oregon University.

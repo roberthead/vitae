@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :annotations, only: [:index, :show]
   resources :courses, only: [:index, :show]
   resource :literature_review, only: [:show]
+  resources :proposals, only: [:show]
   resources :questions, only: [:index]
   resource :thesis_project, only: [:show]
   resource :resume, only: [:show]
