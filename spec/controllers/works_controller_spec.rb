@@ -24,8 +24,10 @@ RSpec.describe WorksController, type: :controller do
   end
 
   describe "#show" do
+    let(:work) { FactoryGirl.create(:work) }
+
     specify do
-      get :show, id: 1
+      get :show, id: work.id
       expect(response).to be_success
     end
   end
